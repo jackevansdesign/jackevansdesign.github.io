@@ -103,9 +103,10 @@ nav ul {list-style-type:none;}
 
 /*custom*/
 .mw1{max-width:22.597em;}
-.www{font-size:5.653em;color:#5218fa;top:50%;transform: translateY(-1.25em);}
+.www{font-size:5.653em;color:#5218fa;top:50%;transform: translateY(-1.25em);-webkit-transform: translateY(-1.25em);}
 .photo{width:7.998em;height:5.653em;}
 .tv{background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='2'><rect width='1' height='1' x='0' y='0' fill='rgba(51,51,51,0.354)'/></svg>");background-size: 1px 2px;width:101%;}
 @media (min-width: 35.4em){.photo{width:11.302em;height:7.998em;}.www{font-size:7.998em;}}
 .is-scrolling{animation:3540ms scrollUp linear infinite;}
 @keyframes scrollUp{from {transform:translateY(0);}to{transform:translateY(-50%);}}
+@-webkit-keyframes scrollUp{from {-webkit-transform:translateY(0);}to{-webkit-transform:translateY(-50%);}}
