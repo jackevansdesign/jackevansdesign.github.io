@@ -113,4 +113,4 @@ nav ul {list-style-type:none;}
 .inactive{color:#a2a2a2;}
 .p7b{padding-bottom:2.827em;}
 @media (min-width: 35.4em){.photo{width:11.302em;height:7.998em;}.www{font-size:7.998em;}}
-@media (max-height: 31.25em){.photo{width:7.998em;height:5.653em;}.www{font-size:5.653em;}.m-h150{height:150vh;}}
+@media (max-height: 35.4em){.photo{width:7.998em;height:5.653em;}.www{font-size:5.653em;}.m-h150{height:150vh;}}
