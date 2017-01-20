@@ -110,3 +110,6 @@ nav ul {list-style-type:none;}
 .is-scrolling{animation:3540ms scrollUp linear infinite;}
 @keyframes scrollUp{from {transform:translateY(0);}to{transform:translateY(-50%);}}
 @-webkit-keyframes scrollUp{from {-webkit-transform:translateY(0);}to{-webkit-transform:translateY(-50%);}}
+.vertical-rule{width:0.25em;height:50%;background:#333333;}
+.inactive{color:#b4b4b4;}
+.p7b{padding-bottom:2.827em;}
