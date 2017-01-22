@@ -36,6 +36,7 @@ nav ul {list-style-type:none;}
 .ttu{text-transform:uppercase;letter-spacing:0.1em;}
 .ttl{text-transform:lowercase;}
 .tac{text-align:center;}
+.tar{text-align:right;}
 .r{position:relative;}
 .a{position:absolute;}
 .t0{top:0;}
@@ -112,6 +113,4 @@ nav ul {list-style-type:none;}
 .is-scrolling{animation:3540ms scrollUp linear infinite;-webkit-animation:3540ms scrollUp linear infinite;}
 @keyframes scrollUp{from {transform:translateY(0);}to{transform:translateY(-50%);}}
 @-webkit-keyframes scrollUp{from {-webkit-transform:translateY(0);}to{-webkit-transform:translateY(-50%);}}
-.intro:before{content:'';position:absolute;left:0;bottom:0;right:0;margin:auto;width:0.25em;height:50%;background:#333333;}
-.inactive{color:#a2a2a2;}
-.p7b{padding-bottom:2.827em;}
+.line:before{content:'';position:absolute;left:0;bottom:0;right:0;margin:auto;width:0.25em;height:50%;background:#333333;}
