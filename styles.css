@@ -113,7 +113,7 @@ nav ul {list-style-type:none;}
 .flatirons{width:7.998em;height:5.653em;}
 .photo{width:7.998em;height:11.302em;background:url('flatirons260x180.jpg')repeat;background-size:100%;}
 .tv{background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='2'><rect width='1' height='1' x='0' y='0' fill='rgba(51,51,51,0.5)'/></svg>");background-size: 1px 2px;}
-.is-scrolling{animation:2500ms scrollUp linear infinite;-webkit-animation:2500ms scrollUp linear infinite;}
+.is-scrolling{animation:3s scrollUp linear infinite;-webkit-animation:3s scrollUp linear infinite;}
 @keyframes scrollUp{from {transform:translateY(0);}to{transform:translateY(-50%);}}
 @-webkit-keyframes scrollUp{from {-webkit-transform:translateY(0);}to{-webkit-transform:translateY(-50%);}}
 .line:before{content:'';position:absolute;left:0;bottom:0;right:0;margin:auto;width:0.25em;height:50%;background:#333333;}
