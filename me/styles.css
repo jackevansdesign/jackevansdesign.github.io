@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: #ffff66;
+}
+
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,sans-serif;
+  line-height: 1.5;
+  padding: 1.5em;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.375;
+  margin-bottom: 0.75em;
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.333;
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin-bottom: 1.2em;
+}
+
+h4,
+p {
+  font-size: 1em;
+  margin-bottom: 1.5em;
+}
+
+h5,
+h6 {
+  font-size: 0.875em;
+  line-height: 1.7;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 1.7em;
+}
+
+a {
+  color: #5218fa;
+  text-decoration: none;
+}
+
+a:active,
+a:focus,
+a::selection {
+  color: #000000;
+  background: #ffff66;
+}
+
+a:active,
+a:focus {
+  box-shadow: 0 -1px 0 #000000 inset;
+}
+
+button {
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  border: 0;
+  padding: 0.5em 1em;
+  background: transparent;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+nav ul {
+  list-style-type: none;
+}
