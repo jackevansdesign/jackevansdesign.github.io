@@ -36,11 +36,11 @@ function animate(oldContent, newContent) {
 
   var fadeOut = oldContent.animate({
     opacity: [1, 0]
-  }, 1000);
+  }, 500);
 
   var fadeIn = newContent.animate({
     opacity: [0, 1]
-  }, 1000);
+  }, 500);
 
   fadeIn.onfinish = function() {
     oldContent.parentNode.removeChild(oldContent);
