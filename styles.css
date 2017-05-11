@@ -1,0 +1,174 @@
+/* webfonts */
+
+@font-face {
+  font-family: "Charter Web";
+  font-weight: 400;
+  src:  url("../fonts/charter/charterregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Charter Web";
+  font-weight: 400;
+  font-style: italic;
+  src:  url("../fonts/charter/charteritalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Charter Web";
+  font-weight: 700;
+  src:  url("../fonts/charter/charterbold.woff") format("woff");
+}
+
+.charter {
+  font-family: "Charter Web",georgia,serif;
+}
+
+/* layout */
+
+main {
+  padding-top: 4em;
+}
+
+section {
+  padding-top: 2em;
+}
+
+footer {
+  padding-top: 8em;
+}
+
+@media (min-width: 23em) {
+  body {
+    font-size: 112.5%;
+    max-width: 21.333em;
+  }
+}
+
+@media (min-width: 32em) {
+  body {
+    font-size: 120%;
+    padding: 15vw;
+    max-width: 100%;
+  }
+
+  header,
+  main,
+  footer {
+    position: relative;
+    margin: 0 auto;
+    max-width: 18.75em;
+  }
+}
+
+@media (min-width: 45em) {
+  body {
+    font-size: 100%;
+    max-width: 100%;
+    padding: 4em;
+    padding: 7.5vw;
+  }
+
+  header,
+  main,
+  footer {
+    max-width: 100%;
+  }
+
+  .flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .flex h1 {
+    flex: 1 100%;
+  }
+
+  .flex section {
+    width: 50%;
+  }
+
+  footer > div {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 50em) {
+  body {
+    font-size: 112.5%;
+  }
+
+  header,
+  main,
+  footer {
+    max-width: 40em;
+  }
+
+  main {
+    padding-top: 7.5vw;
+  }
+
+  footer {
+    padding-top: 15vw;
+  }
+}
+
+@media (min-width: 60em) {
+  body {
+    font-size: 120%;
+  }
+}
+
+@media (min-width: 90em) {
+  body {
+    font-size: 125%;
+  }
+}
+
+/* home */
+
+.home__info p,
+.home__content section {
+  max-width: 18em;
+}
+
+.home__content h1,
+.home__content time {
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+}
+
+.home__content h1 {
+  font-size: 0.875em;
+  margin-bottom: 0;
+}
+
+.home__content h2 {
+  font-size: 1.125em;
+  line-height: 1.333;
+  margin: 0;
+}
+
+.home__content h3 {
+  font-size: 1em;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 0;
+}
+
+.home__content time {
+  font-size: 0.75em;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.home__photo {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.home__photo .noise {
+  position: absolute;
+  top: 0;
+}
