@@ -1,17 +1,59 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jack Evans Design</title>
-        <meta content="I am a designer and coder living and working in Boulder, Colorado." name="description">
-        <link href="css/reset.css" rel="stylesheet">
-        <link href="css/me.css" rel="stylesheet">
-    </head>
-    <body class="home charter">
-        <div class="home__info">
-            <p>I am a designer and coder living and working in Boulder, Colorado.</p>
-            <a href="mailto:hi@jackevans.design">hi@jackevans.design</a>
-        </div>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Evans Design</title>
+    <meta content="I am a designer and coder living and working in Boulder, Colorado." name="description">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body class="home charter">
+    <header class="home__info">
+      <p>I am a designer and coder living and working in Boulder, Colorado.</p>
+      <a href="mailto:hi@jackevans.design">hi@jackevans.design</a>
+    </header>
+    <main class="home__content flex">
+      <h1>Recent Work</h1>
+      <section>
+        <time>Summer 2015</time>
+        <h2>World Oceans Day</h2>
+        <h3>NOAA Ocean Explorer</h3>
+        <p>I designed <a href="http://oceanexplorer.noaa.gov/world-oceans-day-2015">an educational microsite</a> on the importance seafloor mapping.</p>
+      </section>
+    </main>
+    <footer>
+      <div class="home__photo">
+        <img src="img/jackevans.jpg">
+        <canvas id="canvas" class="noise" width="120" height="120"></canvas>
+      </div>
+    </footer>
+    <script>
+      var canvas = document.getElementById('canvas');
+      window.ctx = canvas.getContext('2d');
+
+      function noise(ctx) {
+          var w = 336,
+              h = 240,
+              idata = ctx.createImageData(w, h),
+              buffer32 = new Uint32Array(idata.data.buffer),
+              len = buffer32.length,
+              i = 0;
+          for(; i < len;)
+              buffer32[i++] = ((120 * Math.random())|0) << 24;
+          window.ctx.putImageData(idata, 0, 0);
+      }
+
+      var toggle = true;
+      (function loop() {
+          toggle = !toggle;
+          if (toggle) {
+              requestAnimationFrame(loop);
+              return;
+          }
+          noise(window.ctx);
+          requestAnimationFrame(loop);
+      })();
+    </script>
+  </body>
 </html>
