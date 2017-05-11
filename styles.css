@@ -3,20 +3,20 @@
 @font-face {
   font-family: "Charter Web";
   font-weight: 400;
-  src:  url("../fonts/charter/charterregular.woff") format("woff");
+  src:  url("charterregular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Charter Web";
   font-weight: 400;
   font-style: italic;
-  src:  url("../fonts/charter/charteritalic.woff") format("woff");
+  src:  url("charteritalic.woff") format("woff");
 }
 
 @font-face {
   font-family: "Charter Web";
   font-weight: 700;
-  src:  url("../fonts/charter/charterbold.woff") format("woff");
+  src:  url("charterbold.woff") format("woff");
 }
 
 .charter {
