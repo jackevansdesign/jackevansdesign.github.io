@@ -15,6 +15,7 @@ body {
   color: #333333;
   padding: 1.5em;
   padding: 7.5vw;
+  -webkit-text-size-adjust: 100%;
 }
 
 p,
