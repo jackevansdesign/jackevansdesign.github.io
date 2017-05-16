@@ -105,7 +105,8 @@ nav ol {
 img,
 svg,
 video,
-audio {
+audio,
+canvas {
   max-width: 100%;
   display: block;
 }
