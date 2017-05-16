@@ -1,1 +1,110 @@
+* {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+::selection {
+  background: #ffff66;
+}
+
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,sans-serif;
+  color: #333333;
+  padding: 1.5em;
+  padding: 7.5vw;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+time,
+figcaption {
+  margin: 1em 0;
+  display: block;
+}
+
+p:first-child,
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child,
+time:first-child,
+figcaption:first-child,
+blockquote:first-child {
+  margin-top: 0;
+}
+
+p:last-child,
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+time:last-child,
+figcaption:last-child,
+blockquote:last-child {
+  margin-bottom: 0;
+}
+
+figcaption,
+blockquote {
+  font-style: italic;
+}
+
+a, button {
+  color: #0247fe;
+  text-decoration: none;
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  font: inherit;
+  line-height: 1;
+  cursor: pointer;
+  border: 1px solid;
+  padding: 0.5em 1em;
+  background: transparent;
+  display: block;
+}
+
+a:active,
+a:focus,
+a::selection,
+button:active,
+button:focus,
+button::selection {
+  background: #ffff66;
+  color: #333333;
+}
+
+ul,
+ol {
+  margin: 1.5em 0;
+  padding-left: 1.5em;
+}
+
+nav ul,
+nav ol {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+img,
+svg,
+video,
+audio {
+  max-width: 100%;
+  display: block;
+}
