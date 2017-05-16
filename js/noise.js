@@ -1,4 +1,4 @@
-var canvas = document.getElementById('canvas');
+var canvas = document.getElementById('static');
 window.ctx = canvas.getContext('2d');
 function noise(ctx) {
     var w = 336,
