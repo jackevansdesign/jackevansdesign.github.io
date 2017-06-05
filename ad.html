@@ -10,7 +10,7 @@
   <body class="serif">
     <figure class="ad sans contain">
       <div class="contain">
-        <div id="adContent" class="contain">
+        <div id="adContent" class="contain is-loading">
           <div class="ad__background fill"></div>
           <div class="fill">
             <figcaption class="ad__label h7 uppercase">Advertisement</figcaption>
@@ -42,10 +42,9 @@
     </main>
     <script>
       var adContent = document.getElementById('adContent');
-      adContent.classList.add('is-loading');
-      window.addEventListener('load', function(event) {
-         adContent.classList.remove('is-loading');
-       });
+      window.onload = function() {
+        adContent.classList.remove('is-loading');
+      };
     </script>
   </body>
 </html>
