@@ -471,7 +471,7 @@ time {
 .is-playing .oculus {
   background-position: top right;
   transform: translateY(-75%);
-  transition: 5000ms transform linear;
+  transition: 6000ms transform linear;
   transform-origin: top center;
 }
 
