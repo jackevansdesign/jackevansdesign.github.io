@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional layout classes – Jack Evans Design</title>
+    <meta content="Functional layout classes" name="description">
+    <link href="../styles.css" rel="stylesheet">
+    <link href="notepad.css" rel="stylesheet">
+  </head>
+  <body>
+    <main class="main">
+      <article class="main__article wrap">
+        <h1 class="h1">Functional layout classes</h1>
+        <p class="p">Use the functional classes below as exceptions to the element flow defined in <a href="global-styles.html">Global styles</a>.
+        <p class="p">Set parent elements to relative.</p>
+        <pre>
+          <code>
+            <span>.contain {</span>
+            <span>
+              <span>position: relative;</span>
+              <span>margin: 0 auto;</span>
+            </span>
+            <span>}</span>
+          </code>
+        </pre>
+        <p class="p">Set child elements to absolute.</p>
+        <pre>
+          <code>
+            <span>.fill {</span>
+            <span>
+              <span>position: absolute;</span>
+              <span>top: 0;</span>
+              <span>left: 0;</span>
+              <span>bottom: 0;</span>
+              <span>right: 0;</span>
+              <span>margin: auto;</span>
+            </span>
+            <span>}</span>
+          </code>
+        </pre>
+        <p class="p">Set up flexbox.</p>
+        <pre>
+          <code>
+            <span>.flex {</span>
+            <span>
+              <span>display: flex;</span>
+            </span>
+            <span>}</span>
+          </code>
+        </pre>
+        <p class="p">Absolute center flexbox child element.</p>
+        <pre>
+          <code>
+            <span>.flex > .center {</span>
+            <span>
+              <span>margin: auto;</span>
+            </span>
+            <span>}</span>
+          </code>
+        </pre>
+      </article>
+    </main>
+    <footer class="footer wrap">
+      <nav class="footer__nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="index.html">Notepad</a></li>
+          <li><a href="mailto:hi@jackevans.design">hi@jackevans.design</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
