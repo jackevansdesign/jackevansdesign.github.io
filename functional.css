@@ -1,0 +1,68 @@
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.block {
+  display: block;
+}
+
+.relative {
+  width: 100%;
+  position: relative;
+  margin: 0;
+}
+
+.relative.center {
+  margin: 0 auto;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+}
+
+.absolute.center {
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex > .center {
+  margin: auto;
+}
+
+.height100 {
+  height: 100vh;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.hide {
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
