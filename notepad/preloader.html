@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preloader – Jack Evans Design</title>
+    <meta content="JavaScript plugin to preload HTML elements" name="description">
+    <link href="../global.css" rel="stylesheet">
+    <link href="../functional.css" rel="stylesheet">
+    <link href="../home.css" rel="stylesheet">
+    <link href="notepad.css" rel="stylesheet">
+  </head>
+  <body class="liberation-sans">
+    <main class="main">
+      <article class="article wrap">
+        <h1 class="h1">JavaScript plugin to preload HTML elements</h1>
+        <p class="p">Here is a simple JavaScript plugin for preloading an HTML element.</p>
+        <pre class="liberation-mono">
+          <code>
+            <span>document.body.classList.remove("noJS");</span>
+            <span>var preLoad = document.getElementById('preLoad');</span>
+            <span style="margin-top: 1em;">window.onload = function() {</span>
+            <span>
+              <span>preLoad.classList.remove('is-loading');</span>
+            </span>
+            <span>};</span>
+          </code>
+        </pre>
+        <p class="p">Identify preloaded element. Use removable loading class to style interface transitions with CSS.</p>
+        <p class="p">See the top level “no JS” to style a fallback for users with JavaScript disabled.</p>
+      </article>
+    </main>
+    <footer class="footer wrap">
+      <nav class="footer__nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="index.html">Notepad</a></li>
+          <li><a href="mailto:hi@jackevans.design">hi@jackevans.design</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noise – Jack Evans Design</title>
+    <meta content="Generate and loop noise via canvas element" name="description">
+    <link href="../global.css" rel="stylesheet">
+    <link href="../functional.css" rel="stylesheet">
+    <link href="../home.css" rel="stylesheet">
+    <link href="notepad.css" rel="stylesheet">
+  </head>
+  <body class="liberation-sans">
+    <main class="main">
+      <article class="article wrap">
+        <h1 class="h1">Generate and loop noise via canvas element</h1>
+        <p class="p">See demo below. Use sparingly. Size to fixed pixel width and height for optimal performance.</p>
+        <p class="p">Do not use as full screen background element.</p>
+        <figure>
+          <canvas id="noise" width="168" height="168"></canvas>
+        </figure>
+      </article>
+    </main>
+    <footer class="footer wrap">
+      <nav class="footer__nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="index.html">Notepad</a></li>
+          <li><a href="mailto:hi@jackevans.design">hi@jackevans.design</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script>
+      var canvas = document.getElementById('noise');
+      window.ctx = canvas.getContext('2d');
+      function noise(ctx) {
+          var w = 168,
+              h = 168,
+              idata = ctx.createImageData(w, h),
+              buffer32 = new Uint32Array(idata.data.buffer),
+              len = buffer32.length,
+              i = 0;
+          for(; i < len;)
+              buffer32[i++] = ((168 * Math.random())|0) << 24;
+          window.ctx.putImageData(idata, 0, 0);
+      }
+      var toggle = true;
+      (function loop() {
+          toggle = !toggle;
+          if (toggle) {
+              requestAnimationFrame(loop);
+              return;
+          }
+          noise(window.ctx);
+          requestAnimationFrame(loop);
+      })();
+    </script>
+  </body>
+</html>
