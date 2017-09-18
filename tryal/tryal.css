@@ -121,3 +121,11 @@ a:focus {
 .caption a {
   color: #f2f3f4;
 }
+
+.small {
+  font-size: 0.75em;
+}
+
+.credits h2 {
+  margin-bottom: 0.422em;
+}
