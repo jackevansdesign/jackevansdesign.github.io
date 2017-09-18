@@ -3,6 +3,7 @@ body {
   font-weight: 400;
   line-height: 1.333;
   color: #0f0f0f;
+  background: #f2f3f4;
 }
 
 @media (min-width: 33em) {
@@ -123,12 +124,21 @@ a:focus {
   max-width: 13.3em;
 }
 
+.h3 {
+  font-size: 1.333em;
+  max-width: 10em;
+}
+
 .caption a {
   color: #f2f3f4;
 }
 
 .small {
   font-size: 0.75em;
+}
+
+.quote {
+  padding-left: 1em;
 }
 
 .art {
