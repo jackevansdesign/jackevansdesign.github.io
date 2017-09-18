@@ -1,0 +1,164 @@
+body {
+  font-size: 100%;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  background: #333333;
+  padding: 1em;
+}
+
+@media (min-width: 33.333em) {
+  body {
+    font-size: 133.333%;
+  }
+}
+
+.ad {
+  background: #000000;
+  max-width: 33.333em;
+  border: 1px solid;
+}
+
+.ad__caption,
+.ad__cta {
+  font-size: 0.75em;
+}
+
+.ad__content.is-loading .ad__background {
+  opacity: 0.5;
+}
+
+.ad__background {
+  background: url('flatirons-960.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.6;
+  transform: scale(1);
+  transform-origin: center;
+  transition: 1500ms opacity 3500ms linear, 5000ms transform;
+}
+
+.ad__content.is-loading .ad__background {
+  opacity: 0.8;
+  transform: scale(1.5);
+}
+
+@media (min-width: 60em) {
+  .ad__background {
+    background: url('flatirons-1440.jpg') no-repeat center center;
+    background-size: cover;
+  }
+}
+
+.ad__caption {
+  padding-top: 1em;
+}
+
+.ad__caption-loader {
+  padding-top: 0;
+}
+
+.ad__headline,
+.ad__cta {
+  opacity: 1;
+  transition: 1000ms opacity 3500ms linear, 1000ms visibility 3500ms linear;
+}
+
+.ad__headline {
+  font-size: 2.25em;
+  font-weight: 300;
+  margin: 0.75em 0 0.25em;
+}
+
+.ad__cta {
+  padding: 0.75em 1.5em;
+  background: rgba(0,0,0,0.333);
+  display: inline-block;
+}
+
+.ad:hover .ad__cta {
+  outline: 1px solid;
+}
+
+.ad__content.is-loading .ad__headline,
+.ad__content.is-loading .ad__cta {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.ad__logo {
+  width: 6em;
+  height: 6em;
+  transform: scale(0.5) translateY(137.5%);
+  transform-origin: bottom;
+  transition: 500ms transform 3500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.ad__logo-p1 {
+  transform: scale(1) rotate(0);
+  transition: 500ms transform 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.ad__logo-p2 {
+  transform: scale(1);
+  transition: 750ms transform 250ms cubic-bezier(0.25, 0.46, 0.45, 1.75);
+}
+
+.ad__content.is-loading .ad__logo {
+  transform: scale(1) translateY(0);
+}
+
+.ad__content.is-loading .ad__logo-p1 {
+  transform: scale(0.5) rotate(-60deg);
+}
+
+.ad__content.is-loading .ad__logo-p2 {
+  transform: scale(0.5);
+}
+
+.ad__loader {
+  background: #333333;
+  opacity: 0;
+  transition: 500ms all 250ms linear;
+}
+
+.ad__content.is-loading + .ad__loader {
+  opacity: 1;
+}
+
+.ad__loader:before,
+.ad__loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto auto auto -50%;
+  width: 200%;
+  height: 1px;
+  background: #ffffff;
+  opacity: 0;
+  transition: 500ms all 250ms;
+}
+
+.ad__content.is-loading + .ad__loader:before {
+  transform: rotate(-45deg);
+  opacity: 1;
+}
+
+.ad__content.is-loading + .ad__loader:after {
+  transform: rotate(45deg);
+  opacity: 1;
+}
+
+@media (min-width: 60em) {
+  .ad__content.is-loading + .ad__loader:before {
+    transform: rotate(-33.666deg);
+
+  }
+
+  .ad__content.is-loading + .ad__loader:after {
+    transform: rotate(33.666deg);
+  }
+}
