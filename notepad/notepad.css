@@ -57,7 +57,7 @@ figcaption {
 
 .player__button:hover svg,
 .player__button:focus svg {
-  fill: #ff3366;
+  fill: #0247fe;
 }
 
 .is-playing .player__button {
