@@ -30,8 +30,7 @@ body {
 }
 
 .ad__background {
-  background: url('flatirons-960.jpg') no-repeat center center;
-  background-size: cover;
+  padding-top: 100%;
   opacity: 0.6;
   transform: scale(1);
   transform-origin: center;
@@ -45,8 +44,7 @@ body {
 
 @media (min-width: 60em) {
   .ad__background {
-    background: url('flatirons-1440.jpg') no-repeat center center;
-    background-size: cover;
+    padding-top: 66.666%;
   }
 }
 
