@@ -1,0 +1,123 @@
+body {
+  font-size: 100%;
+  font-weight: 400;
+  line-height: 1.382;
+  color: #0f0f0f;
+}
+
+@media (min-width: 33em) {
+  body {
+    font-size: 133%;
+  }
+}
+
+@media (min-width: 66em) {
+  body {
+    font-size: 177%;
+  }
+}
+
+@media (min-width: 77em) {
+  body {
+    font-size: 236.9%;
+  }
+}
+
+body * + * {
+  margin-top: 1.777em;
+}
+
+nav ul * + *,
+picture * + * {
+  margin-top: 0;
+}
+
+a,
+::selection {
+  color: #ff3366;
+}
+
+a:hover,
+a:focus {
+  color: #f2f3f4;
+  background: #ff3366;
+}
+
+.infini {
+  font-family: "Infini", -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,sans-serif;
+}
+
+@font-face {
+  font-family: "Infini";
+  font-weight: 400;
+  src:  url("infini-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Infini";
+  font-weight: 400;
+  font-style: italic;
+  src:  url("infini-italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Infini";
+  font-weight: 700;
+  src:  url("infini-bold.woff") format("woff");
+}
+
+.infini-picto {
+  font-family: "Infini Picto", -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,sans-serif;
+}
+
+@font-face {
+  font-family: "Infini Picto";
+  font-weight: 700;
+  src:  url("infini-picto.woff") format("woff");
+}
+
+.logo {
+  font-size: 1.777em;
+  font-size: 23.69vw;
+}
+
+@media (min-width: 60em) {
+  .logo {
+    font-size: 17.7vw;
+  }
+}
+
+.logotype {
+  font-size: 2.369em;
+}
+
+.reverse {
+  color: #f2f3f4;
+  background: #0f0f0f;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  padding: 1.333em;
+}
+
+@media (min-width: 33em) {
+  .wrap {
+    padding: 1.777em;
+  }
+}
+
+@media (min-width: 77em) {
+  .wrap {
+    padding: 2.369em;
+  }
+}
+
+.h2 {
+  font-size: 1.777em;
+  max-width: 13.3em;
+}
+
+.caption a {
+  color: #f2f3f4;
+}
