@@ -90,7 +90,7 @@ a:focus {
 }
 
 .logotype {
-  font-size: 2.369em;
+  font-size: 1.777em;
 }
 
 .reverse {
@@ -100,16 +100,10 @@ a:focus {
 }
 
 .wrap {
-  padding: 1.333em;
+  padding: 1.777em;
 }
 
-@media (min-width: 33em) {
-  .wrap {
-    padding: 1.777em;
-  }
-}
-
-@media (min-width: 77em) {
+@media (min-width: 60em) {
   .wrap {
     padding: 2.369em;
   }
