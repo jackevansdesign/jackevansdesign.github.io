@@ -41,6 +41,12 @@ a,
 
 a:hover,
 a:focus {
+  color: #0f0f0f;
+  background: #ff3366;
+}
+
+.reverse a:hover,
+.reverse a:focus {
   color: #f2f3f4;
   background: #ff3366;
 }
@@ -89,10 +95,6 @@ a:focus {
   }
 }
 
-.logotype {
-  font-size: 1.777em;
-}
-
 .reverse {
   color: #f2f3f4;
   background: #0f0f0f;
@@ -129,6 +131,7 @@ a:focus {
 
 .small {
   font-size: 0.75em;
+  -webkit-text-size-adjust: 100%;
 }
 
 .quote {
@@ -143,15 +146,10 @@ a:focus {
   margin-bottom: 0.422em;
 }
 
-.nav .flex {
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav a {
-  color: #0f0f0f;
-}
-
 .p {
   max-width: 21.823em;
+}
+
+.time {
+  margin-top: 0.422em;
 }
