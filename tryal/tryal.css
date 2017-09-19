@@ -51,6 +51,12 @@ a:focus {
   background: #ff3366;
 }
 
+.header-page a:hover,
+.header-page a:focus {
+  color: #0f0f0f;
+  background: transparent;
+}
+
 .infini {
   font-family: "Infini", -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,sans-serif;
 }
@@ -151,5 +157,5 @@ a:focus {
 }
 
 .time {
-  margin-top: 0.422em;
+  margin-top: 0.75em;
 }
