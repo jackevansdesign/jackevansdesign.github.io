@@ -42,19 +42,16 @@ a,
 a:hover,
 a:focus {
   color: #0f0f0f;
-  background: #ff3366;
 }
 
 .reverse a:hover,
 .reverse a:focus {
   color: #f2f3f4;
-  background: #ff3366;
 }
 
 .header-page a:hover,
 .header-page a:focus {
   color: #0f0f0f;
-  background: transparent;
 }
 
 .infini {
@@ -129,10 +126,6 @@ a:focus {
 .h3 {
   font-size: 1.333em;
   max-width: 10em;
-}
-
-.caption a {
-  color: #f2f3f4;
 }
 
 .small {
