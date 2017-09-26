@@ -1,14 +1,3 @@
-.charter {
-  font-family: "Charter", Georgia, serif;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Charter";
-  font-weight: 400;
-  src:  url("charter-regular.woff") format("woff");
-}
-
 pre {
   font-family: Consolas, Menlo, Courier, monospace;
   font-size: 0.5em;
@@ -127,7 +116,18 @@ figcaption {
 }
 
 #noise {
-    display: block;
-    margin-top: 3em;
-    border-radius: 50%;
+  display: block;
+}
+
+.noise {
+  margin-top: 3em;
+}
+
+.noise img {
+  width: auto;
+}
+
+#noise,
+.noise img {
+  border-radius: 50%;
 }
