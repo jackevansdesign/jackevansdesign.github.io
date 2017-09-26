@@ -1,6 +1,42 @@
+.fira-sans {
+  font-family: "Fira Sans Condensed";
+}
+
+@font-face {
+  font-family: "Fira Sans Condensed";
+  src:  url("fira-sans-condensed.woff") format("woff");
+}
+
+.fira-mono {
+  font-family: "Fira Mono", Consolas, Menlo, Courier, monospace;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Fira Mono";
+  font-weight: 400;
+  src:  url("fira-mono.woff") format("woff");
+}
+
+.charter {
+  font-family: "Charter", Georgia, serif;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Charter";
+  src:  url("charter-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Charter";
+  src:  url("charter-italic.woff") format("woff");
+  font-style: italic;
+}
+
 body {
   font-size: 125%;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.5;
   color: #333333;
 }
@@ -51,11 +87,12 @@ a {
 }
 
 a:hover,
+a:active,
 a:focus,
 ::selection {
   color: initial;
-  background: transparent;
   background: #ffef00;
+  -webkit-tap-highlight-color: #ffef00;
 }
 
 .h1 {
