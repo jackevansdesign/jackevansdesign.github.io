@@ -1,28 +1,34 @@
-body {
-  font-size: 100%;
-  font-weight: 400;
-  line-height: 1.5;
+.ad {
   color: #ffffff;
   -webkit-font-smoothing: antialiased;
   background: #333333;
-  padding: 1em;
 }
 
-@media (min-width: 33.333em) {
-  body {
-    font-size: 133.333%;
-  }
+.ad.wrap,
+.ad__loader.wrap,
+.ad__copy.wrap {
+  padding: 0.5em;
 }
 
-.ad {
-  background: #000000;
-  max-width: 33.333em;
+.ad > div {
+  max-width: 25em;
   border: 1px solid;
+  cursor: pointer;
 }
 
 .ad__caption,
 .ad__cta {
   font-size: 0.75em;
+  margin: 0;
+  color: #ffffff;
+}
+
+.ad__caption {
+  font-size: 0.5em;
+}
+
+.ad__content {
+  background: #000000;
 }
 
 .ad__content.is-loading .ad__background {
@@ -48,14 +54,6 @@ body {
   }
 }
 
-.ad__caption {
-  padding-top: 1em;
-}
-
-.ad__caption-loader {
-  padding-top: 0;
-}
-
 .ad__headline,
 .ad__cta {
   opacity: 1;
@@ -63,9 +61,9 @@ body {
 }
 
 .ad__headline {
-  font-size: 2.25em;
+  font-size: 1.777em;
   font-weight: 300;
-  margin: 0.75em 0 0.25em;
+  margin: 0.5em 0 0.25em;
 }
 
 .ad__cta {
@@ -74,7 +72,7 @@ body {
   display: inline-block;
 }
 
-.ad:hover .ad__cta {
+.ad > div:hover .ad__cta {
   outline: 1px solid;
 }
 
@@ -85,9 +83,9 @@ body {
 }
 
 .ad__logo {
-  width: 6em;
-  height: 6em;
-  transform: scale(0.5) translateY(137.5%);
+  width: 5.6em;
+  height: 5.6em;
+  transform: scale(0.5) translateY(125%);
   transform-origin: bottom;
   transition: 500ms transform 3500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
@@ -159,4 +157,14 @@ body {
   .ad__content.is-loading + .ad__loader:after {
     transform: rotate(33.666deg);
   }
+}
+
+.ad__replay {
+  z-index: 1;
+}
+
+.ad__replay:hover,
+.ad__replay:active,
+.ad__replay:focus {
+  background: transparent;
 }
