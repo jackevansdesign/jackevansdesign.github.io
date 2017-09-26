@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" class="h-100">
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +10,12 @@
     <link href="tryal.css" rel="stylesheet">
   </head>
   <body class="infini">
-    <main>
-      <header class="flex wrap reverse">
-        <h1 class="h2 bold uppercase center"><span class="infini-picto">T</span>ryal</h1>
-      </header>
-      <section class="relative wrap reverse">
-        <p class="h2">Unbranded advertising for the posthuman web</p>
-      </section>
-      <figure class="art relative wrap reverse">
+    <header class="wrap txt-center dark">
+      <h1 class="h2 bold uppercase"><span class="infini-picto">T</span>ryal</h1>
+    </header>
+    <main class="wrap relative dark">
+      <p class="h1 mw1">Unbranded advertising for the posthuman web</p>
+      <figure>
         <div class="relative">
           <picture>
             <source media="(min-width: 60em)" srcset="pollice-verso-1440-bw.jpg">
@@ -25,21 +23,37 @@
             <img src="pollice-verso-1440-bw.jpg" alt="Pollice Verso">
           </picture>
           <div class="absolute flex">
-            <div class="logo bold uppercase center"><span class="infini-picto">T</span></div>
+            <h1 class="logo bold infini-picto center">T</h1>
           </div>
         </div>
-        <figcaption class="caption"><a href="tryal.pdf">Download (PDF)</a></figcaption>
+        <figcaption>
+          <a href="tryal.pdf">Download (pdf)</a>
+        </figcaption>
       </figure>
-      <section class="relative wrap">
-        <p class="p">In 1917 Sigmund Freud discovered the unconscious forces that govern us all and suddenly we were no longer ourselves.</p>
-        <blockquote class="quote h3 italic">The ego is not master in its own house.</blockquote>
-        <p class="p">One century later, our minds having been reengineered for consent, we upload digital husks of who we once were, precious data mined by corporations pretending to be people.</p>
-        <p class="p">The future will be <a href="beginnings.html">posthuman</a>.</p>
-        <p class="tagline h2 uppercase bold">Un-<span class="block">brand</span><span class="block">your<span class="infini-picto">s</span>elf</span></p>
-        <p class="p"><a href="beginnings.html">Read more [...]</a></p>
+    </main>
+    <nav>
+      <article class="article txt-center wrap">
+        <h1 class="h1 bold">Strategies</h1>
+        <time class="article__time small block">Fall 2017</time>
+        <p><a href="strategies.html">Read more [...]</a></p>
+      </article>
+      <article class="article txt-center wrap">
+        <h1 class="h1 bold">Beginnings</h1>
+        <time class="article__time small block">Summer 2017</time>
+        <p><a href="beginnings.html">Read more [...]</a></p>
+      </article>
+    </nav>
+    <aside class="relative">
+      <section class="wrap relative reverse">
+        <h1 class="tagline uppercase bold">
+          <span class="block">Un-</span>
+          <span class="block">brand</span>
+          <span class="block">your<span class="infini-picto">s</span>elf</span>
+        </h1>
+        <p><a href="info.html">More info [...]</a></p>
       </section>
-      <section class="credits wrap relative reverse">
-        <h1 class="h3">Credits</h1>
+      <section class="credits dark wrap relative">
+        <h1 class="h2">Credits</h1>
         <div>
           <h2 class="small uppercase">Art</h2>
           <p class="relative"><span class="italic">Pollice Verso</span> (1872), Jean-Leon Gerome</p>
@@ -49,6 +63,6 @@
           <p class="relative">Infini, Sandrine Nugue / CNAP</p>
         </div>
       </section>
-    </main>
+    </aside>
   </body>
 </html>
