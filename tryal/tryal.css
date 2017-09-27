@@ -53,7 +53,7 @@ body {
 
 @media (min-width: 66em) {
   body {
-    font-size: 236.9%;
+    font-size: 250%;
   }
 }
 
@@ -145,4 +145,152 @@ a:focus {
 
 .article__time {
   margin-top: 1em;
+}
+
+.ad {
+  width: 100%;
+}
+
+.ad__loader.wrap,
+.ad__copy.wrap {
+  padding: 0.75em;
+}
+
+.ad__caption-loader {
+  margin-top: 0;
+}
+
+.ad__loader,
+.ad__copy {
+  border: 3px solid;
+}
+
+.ad__loader:before,
+.ad__loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto auto auto -50%;
+  width: 200%;
+  height: 3px;
+  background: #f2f3f4;
+}
+
+.ad__loader:before {
+  transform: rotate(-45deg);
+}
+
+.ad__loader:after {
+  transform: rotate(45deg);
+}
+
+.ad__content {
+  font-size: 100%;
+  padding-bottom: 100%;
+}
+
+@media (min-width: 25em) {
+  .ad__content {
+    font-size: 112.5%;
+  }
+}
+
+@media (min-width: 60em) {
+  .ad__loader:before {
+    transform: rotate(-33.666deg);
+
+  }
+
+  .ad__loader:after {
+    transform: rotate(33.666deg);
+  }
+
+  .ad__content {
+    padding-bottom: 66.667%;
+  }
+}
+
+@media (min-width: 56.3em) {
+  .ad__content {
+    font-size: 100%;
+  }
+}
+
+@media (min-width: 77em) {
+  .ad__content {
+    font-size: 56.3%;
+  }
+}
+
+.demo.flex {
+  flex-direction: column;
+}
+
+.demo .ad:nth-of-type(odd) {
+  margin-bottom: 1.777em;
+}
+
+.demo:nth-of-type(odd) {
+  padding-bottom: 0;
+}
+
+@media (min-width: 77em) {
+  .demo.flex {
+    flex-direction: row;
+  }
+
+  .demo .ad:nth-of-type(odd) {
+    margin-right: 2.369em;
+    margin-bottom: 0;
+  }
+
+  .demo .ad {
+    width: 50%;
+  }
+}
+
+.ad__logo {
+  top: auto;
+  bottom: 0.563em;
+}
+
+.ad__logo,
+.ad__tagline {
+  font-size: 177%;
+}
+
+@media (min-width: 100em) {
+  .ad__logo,
+  .ad__tagline {
+    font-size: 236.9%;
+  }
+}
+
+.ad__tagline {
+  margin-top: 0.563em;
+}
+
+.ad__background {
+  opacity: 0.5;
+}
+
+.ad__cta {
+  width: 4.2em;
+  height: 4.2em;
+  border-radius: 50%;
+  border: 3px solid;
+  background: #0f0f0f;
+}
+
+.emojis.flex {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.emojis div {
+  margin: 0;
+  font-size: 2.369em;
 }
