@@ -1,0 +1,54 @@
+body {
+  font-size: 125%;
+}
+
+@media (min-width: 25em) {
+  body {
+    font-size: 141.4%;
+  }
+}
+
+@media (min-width: 35.4em) {
+  body {
+    font-size: 161.8%;
+  }
+}
+
+@media (min-width: 56.5em) {
+  body {
+    font-size: 177.7%;
+  }
+}
+
+@media (min-width: 87.5em) {
+  body {
+    font-size: 200%;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+.wrap {
+  padding: 1em;
+}
+
+@media (min-width: 35.4em) {
+  .wrap {
+    padding: 1.414em;
+  }
+}
+
+@media (min-width: 56.5em) {
+  .wrap {
+    padding: 2em;
+  }
+}
+
+@media (min-width: 70.7em) {
+  .wrap {
+    width: 61.8%;
+    padding: 2em 0;
+  }
+}
