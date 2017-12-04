@@ -1,0 +1,265 @@
+.system-sans {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,sans-serif;
+}
+
+.system-serif {
+  font-family: Georgia,serif;
+}
+
+.h1 {
+  font-size: 2.827em;
+}
+
+.h2 {
+  font-size: 2.618em;
+}
+
+.h3 {
+  font-size: 2.25em;
+}
+
+.h4 {
+  font-size: 2em;
+}
+
+.h5 {
+  font-size: 1.777em;
+}
+
+.h6 {
+  font-size: 1.618em;
+}
+
+.h7 {
+  font-size: 1.5em;
+}
+
+.h8 {
+  font-size: 1.414em;
+}
+
+.h9 {
+  font-size: 1.333em;
+}
+
+.h10 {
+  font-size: 1.25em;
+}
+
+.h11 {
+  font-size: 1em;
+}
+
+.h12 {
+  font-size: 0.875em;
+}
+
+.h13 {
+  font-size: 0.8em;
+}
+
+.h14 {
+  font-size: 0.75em;
+}
+
+.h15 {
+  font-size: 0.707em;
+}
+
+.h16 {
+  font-size: 0.618em;
+}
+
+.h17 {
+  font-size: 0.5em;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.block {
+  display: block;
+}
+
+.relative,
+.absolute {
+  margin: 0;
+}
+
+.relative {
+  position: relative;
+}
+
+.relative.center {
+  margin: 0 auto;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.absolute.center {
+  margin: auto;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.max-width-1 {
+  max-width: 10em;
+}
+
+.max-width-2 {
+  max-width: 13.3em;
+}
+
+.max-width-3 {
+  max-width: 18.75em;
+}
+
+.max-width-4 {
+  max-width: 22.5em;
+}
+
+.max-width-5 {
+  max-width: 25em;
+}
+
+.aspect-ratio {
+  padding-top: 100%;
+}
+
+@media (min-width: 61.8em) {
+  .aspect-ratio {
+    padding-top: 66.7%;
+  }
+}
+
+.overflow-x {
+  overflow-x: hidden;
+}
+
+.overflow-y {
+  overflow-y: hidden;
+}
+
+.hide {
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-justify-between {
+  justify-content: space-between;
+}
+
+.flex-justify-around {
+  justify-content: space-around;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex > .center {
+  margin: auto;
+}
+
+.flex-end {
+  align-self: flex-end;
+}
+
+.text-darkgrey {
+  color: #333333;
+}
+
+.text-white {
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+.text-blue {
+  color: #0247fe;
+}
+
+.background-black {
+  background: #000000;
+}
+
+.background-darkgrey {
+  background: #333333;
+}
+
+.background-white {
+  background: #ffffff;
+}
+
+.background-lightgrey {
+  background: #eeeeee;
+}
+
+.background-blue {
+  background: #0247fe;
+}
+
+.background-magenta {
+  background: #ff0090;
+}
+
+.background-green {
+  background: #0bda51;
+}
+
+.background-yellow {
+  background: #ffef00;
+}
