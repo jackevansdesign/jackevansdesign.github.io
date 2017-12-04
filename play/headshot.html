@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headshot — Play — Jack Evans Design</title>
+    <meta content="Photo with looping static" name="description">
+    <link href="../css/global.css" rel="stylesheet">
+    <link href="../css/functional.css" rel="stylesheet">
+    <link href="../css/home.css" rel="stylesheet">
+    <link href="../css/play.css" rel="stylesheet">
+    <link href="../css/charter.css" rel="stylesheet">
+  </head>
+  <body class="charter">
+    <nav>
+      <div class="relative center wrap">
+        <ul class="h11 lowercase relative center flex flex-justify-between">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../work/index.html">Work</a></li>
+          <li><a href="../play/index.html">Play</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <figure>
+        <div class="relative center wrap background-lightgrey">
+          <div class="max-width-1 relative center overflow-x overflow-y">
+            <img src="../img/jack.jpg" />
+            <canvas id="noise" class="absolute" width="320" height="320"></canvas>
+          </div>
+        </div>
+      </figure>
+    </main>
+    <nav>
+      <div class="relative center wrap">
+        <ul class="h11 lowercase relative center flex flex-justify-around">
+          <li><a href="player.html">Backward</a></li>
+          <li>Forward</li>
+        </ul>
+      </div>
+    </nav>
+    <script>
+      var canvas = document.getElementById('noise');
+      window.ctx = canvas.getContext('2d');
+      function noise(ctx) {
+          var w = 320,
+              h = 320,
+              idata = ctx.createImageData(w, h),
+              buffer32 = new Uint32Array(idata.data.buffer),
+              len = buffer32.length,
+              i = 0;
+          for(; i < len;)
+              buffer32[i++] = ((168 * Math.random())|0) << 24;
+          window.ctx.putImageData(idata, 0, 0);
+      }
+      var toggle = true;
+      (function loop() {
+          toggle = !toggle;
+          if (toggle) {
+              requestAnimationFrame(loop);
+              return;
+          }
+          noise(window.ctx);
+          requestAnimationFrame(loop);
+      })();
+    </script>
+  </body>
+</html>
