@@ -1,3 +1,3 @@
 # Jack Evans
 
-Digital designer working in Boulder, Colorado
+Interfaces and experiences for the world wide web
