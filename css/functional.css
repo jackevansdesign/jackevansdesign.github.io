@@ -156,6 +156,10 @@
   max-width: 25em;
 }
 
+.max-width-6 {
+  max-width: 33.3em;
+}
+
 .aspect-ratio {
   padding-top: 100%;
 }
@@ -217,6 +221,10 @@
 
 .flex-end {
   align-self: flex-end;
+}
+
+.text-black {
+  color: #000000;
 }
 
 .text-darkgrey {
