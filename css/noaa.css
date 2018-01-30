@@ -1,35 +1,5 @@
 body {
-  font-size: 112.5%;
-  font-weight: 400;
-  line-height: 1.414;
   color: #0a7e8c;
-}
-
-@media (min-width: 45em) {
-  body {
-    font-size: 141.4%;
-  }
-}
-
-@media (min-width: 70.7em) {
-  body {
-    font-size: 161.8%;
-  }
-}
-
-@media (min-width: 80em) {
-  body {
-    font-size: 177.7%;
-  }
-}
-
-body * + * {
-  margin-top: 1.414em;
-}
-
-nav ul * + *,
-picture * + * {
-  margin-top: 0;
 }
 
 ::selection {
@@ -55,17 +25,6 @@ code {
 
 code span {
   padding-left: 1em;
-}
-
-.wrap {
-  padding: 1.414em;
-}
-
-@media (min-width: 61.8em) {
-  .wrap {
-    width: 70.7%;
-    padding: 2em 0;
-  }
 }
 
 .background-metallicseaweed {
