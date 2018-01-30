@@ -98,3 +98,11 @@ nav ul * + *,
 picture * + * {
   margin-top: 0;
 }
+
+code {
+  font-family: Consolas, Menlo, Courier, monospace;
+}
+
+code span {
+  padding-left: 1em;
+}
