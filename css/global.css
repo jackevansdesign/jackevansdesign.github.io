@@ -14,19 +14,53 @@ html {
 }
 
 body {
-  font-size: 100%;
+  font-size: 125%;
   font-weight: 400;
   line-height: 1.414;
   color: #333333;
 }
 
-body * + * {
-  margin-top: 1em;
+@media (min-width: 25em) {
+  body {
+    font-size: 141.4%;
+  }
 }
 
-nav ul * + *,
-picture * + * {
-  margin-top: 0;
+@media (min-width: 35.4em) {
+  body {
+    font-size: 161.8%;
+  }
+}
+
+@media (min-width: 56.5em) {
+  body {
+    font-size: 177.7%;
+  }
+}
+
+::selection {
+  background: rgba(238,238,238,1);
+}
+
+a,
+button {
+  text-decoration: none;
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  color: blue;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #333333;
+}
+
+a:focus {
+  background: #eeeeee;
 }
 
 h1,
@@ -40,38 +74,27 @@ blockquote {
   line-height: 1.25;
 }
 
-::selection {
-  background: rgba(238,238,238,1);
+blockquote {
+  margin-bottom: 1em;
 }
 
-a,
-button {
-  color: #0247fe;
-  text-decoration: none;
-  outline: 0;
-  -webkit-tap-highlight-color: transparent;
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-}
-
-a:hover,
-a:active,
-a:focus {
-  color: #333333;
-}
-
-a:focus {
-  background: #eeeeee;
-}
-
-nav ul {
+ul {
   list-style-type: none;
 }
 
 img,
 svg,
-picture {
+picture,
+canvas {
   width: 100%;
   display: block;
+}
+
+body * + * {
+  margin-top: 1em;
+}
+
+nav ul * + *,
+picture * + * {
+  margin-top: 0;
 }
