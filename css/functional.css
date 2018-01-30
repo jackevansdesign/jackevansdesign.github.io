@@ -1,11 +1,3 @@
-.system-sans {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,sans-serif;
-}
-
-.system-serif {
-  font-family: Georgia,serif;
-}
-
 .h1 {
   font-size: 2.827em;
 }
@@ -74,10 +66,6 @@
   font-size: 0.5em;
 }
 
-.normal {
-  font-weight: 400;
-}
-
 .bold {
   font-weight: 700;
 }
@@ -88,7 +76,7 @@
 
 .uppercase {
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.0618em;
 }
 
 .lowercase {
@@ -128,36 +116,12 @@
   margin: auto;
 }
 
-.width-100 {
-  width: 100%;
-}
-
 .height-100 {
   height: 100%;
 }
 
-.max-width-1 {
-  max-width: 10em;
-}
-
-.max-width-2 {
-  max-width: 13.3em;
-}
-
-.max-width-3 {
-  max-width: 18.75em;
-}
-
-.max-width-4 {
-  max-width: 22.5em;
-}
-
-.max-width-5 {
-  max-width: 25em;
-}
-
-.max-width-6 {
-  max-width: 33.3em;
+.width-100 {
+  width: 100%;
 }
 
 .aspect-ratio {
@@ -223,51 +187,92 @@
   align-self: flex-end;
 }
 
-.text-black {
-  color: #000000;
+.max-width-1 {
+  max-width: 10em;
 }
 
-.text-darkgrey {
-  color: #333333;
+.max-width-2 {
+  max-width: 13.3em;
+}
+
+.max-width-3 {
+  max-width: 17.7em;
+}
+
+.max-width-4 {
+  max-width: 18.75em;
+}
+
+.max-width-5 {
+  max-width: 22.5em;
+}
+
+.max-width-6 {
+  max-width: 25em;
+}
+
+.max-width-7 {
+  max-width: 28.27em;
+}
+
+.max-width-8 {
+  max-width: 33.3em;
+}
+
+.max-width-9 {
+  max-width: 41.4em;
+}
+
+.max-width-10 {
+  max-width: 50em;
+}
+
+.text-black {
+  color: black;
 }
 
 .text-white {
-  color: #ffffff;
+  color: white;
   -webkit-font-smoothing: antialiased;
 }
 
-.text-blue {
-  color: #0247fe;
-}
-
 .background-black {
-  background: #000000;
-}
-
-.background-darkgrey {
-  background: #333333;
+  background: black;
 }
 
 .background-white {
-  background: #ffffff;
+  background: white;
 }
 
 .background-lightgrey {
   background: #eeeeee;
 }
 
-.background-blue {
-  background: #0247fe;
+.wrap {
+  padding: 1.414em;
 }
 
-.background-magenta {
-  background: #ff0090;
+@media (min-width: 35.4em) {
+  .wrap {
+    padding: 1.414em;
+  }
 }
 
-.background-green {
-  background: #0bda51;
+@media (min-width: 56.5em) {
+  .wrap {
+    padding: 2em;
+  }
 }
 
-.background-yellow {
-  background: #ffef00;
+@media (min-width: 80em) {
+  .wrap {
+    width: 61.8%;
+    padding: 2em 0;
+  }
+}
+
+@media (min-width: 87.5em) {
+  .wrap {
+    padding: 2.827em 0;
+  }
 }
