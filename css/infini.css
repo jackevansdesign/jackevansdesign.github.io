@@ -1,0 +1,31 @@
+.infini {
+  font-family: "Infini";
+}
+
+@font-face {
+  font-family: "Infini";
+  font-weight: 400;
+  src:  url("../woff/infini-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Infini";
+  font-style: italic;
+  src:  url("../woff/infini-italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Infini";
+  font-weight: 700;
+  src:  url("../woff/infini-bold.woff") format("woff");
+}
+
+.infini-picto {
+  font-family: "Infini Picto";
+}
+
+@font-face {
+  font-family: "Infini Picto";
+  font-weight: 700;
+  src:  url("../woff/infini-picto.woff") format("woff");
+}
