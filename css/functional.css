@@ -231,6 +231,10 @@
   color: black;
 }
 
+.text-grey {
+  color: #999999;
+}
+
 .text-white {
   color: white;
   -webkit-font-smoothing: antialiased;
@@ -238,6 +242,14 @@
 
 .background-black {
   background: black;
+}
+
+.background-darkgrey {
+  background: #333333;
+}
+
+.background-blue {
+  background: blue;
 }
 
 .background-white {
