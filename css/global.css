@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  font-size: 125%;
+  font-size: 112.5%;
   font-weight: 400;
   line-height: 1.414;
   color: #333333;
@@ -83,9 +83,8 @@ ul {
 }
 
 img,
-svg,
 picture,
-canvas {
+svg {
   width: 100%;
   display: block;
 }
