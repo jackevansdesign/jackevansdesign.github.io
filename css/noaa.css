@@ -226,3 +226,11 @@ a:focus {
   background-size: 300%;
   background-position: center bottom;
 }
+
+.waves {
+  z-index: 1;
+}
+
+.logotype {
+  z-index: 2;
+}
