@@ -1,3 +1,7 @@
+.background-lightgrey a:focus{
+  background: white;
+}
+
 ::selection {
   color: blue;
   background: transparent;
@@ -49,22 +53,12 @@
   }
 }
 
-.opening {
-  min-height: 20em;
-}
-
 .opening .logo {
   transform: translateX(0.0375em);
 }
 
-.loader {
-  color: blue;
-  background: black;
-}
-
 .scroll {
   padding: 0.25em;
-  top: auto;
 }
 
 .fadeIn {
@@ -88,4 +82,12 @@
 
 .blink {
   animation: blink 707ms infinite;
+}
+
+.border-radius {
+  border-radius: 11.3em;
+}
+
+.aspect-ratio-2 {
+  padding-top: 140%;
 }

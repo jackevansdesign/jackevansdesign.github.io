@@ -5,7 +5,7 @@
 }
 
 .ad__content, .ad__loader {
-  border: 2px solid;
+  border: 3px solid;
   cursor: pointer;
 }
 
@@ -32,14 +32,12 @@
 }
 
 .ad__cta {
-  color: #ffffff;
   padding: 0.707em 1.5em;
   background: rgba(51,51,51,0.777);
-  display: inline-block;
 }
 
 .ad > *:hover .ad__cta {
-  outline: 2px solid;
+  outline: 3px solid;
 }
 
 .ad__content.is-loading .ad__headline,
@@ -79,7 +77,6 @@
 }
 
 .ad__loader {
-  background: #333333;
   opacity: 0;
   transition: 500ms all 250ms linear;
 }
@@ -98,7 +95,7 @@
   right: 0;
   margin: auto auto auto -50%;
   width: 200%;
-  height: 1px;
+  height: 3px;
   background: #ffffff;
   opacity: 0;
   transition: 500ms all 250ms;
@@ -123,10 +120,6 @@
   .ad__content.is-loading + .ad__loader:after {
     transform: rotate(33.666deg);
   }
-}
-
-.ad__replay {
-  z-index: 1;
 }
 
 .ad__replay:hover,
