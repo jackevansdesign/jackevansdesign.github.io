@@ -14,10 +14,16 @@ html {
 }
 
 body {
-  font-size: 112.5%;
+  font-size: 113%;
   font-weight: 400;
   line-height: 1.414;
   color: #333333;
+}
+
+@media (min-width: 20.8125em) {
+  body {
+    font-size: 125%;
+  }
 }
 
 @media (min-width: 25em) {
@@ -26,15 +32,21 @@ body {
   }
 }
 
-@media (min-width: 35.4em) {
+@media (min-width: 40em) {
   body {
     font-size: 161.8%;
   }
 }
 
-@media (min-width: 56.5em) {
+@media (min-width: 61.8em) {
   body {
     font-size: 177.7%;
+  }
+}
+
+@media (min-width: 96em) {
+  body {
+    font-size: 200%;
   }
 }
 
