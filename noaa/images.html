@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US" class="height-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images – Undercurrent</title>
+    <meta content="An open source digital identity for ocean exploration at National Oceanic and Atmospheric Administration" name="description">
+    <link href="../css/global.css" rel="stylesheet">
+    <link href="../css/functional.css" rel="stylesheet">
+    <link href="../css/noaa.css" rel="stylesheet">
+  </head>
+  <body class="color-metallicseaweed height-100">
+    <header class="header relative center wrap flex flex-justify-between flex-align-center">
+      <h1 class="h8 uppercase">Images</h1>
+      <a class="h15 bold uppercase margin-0 border-bottom-0" href="menu.html">Menu</a>
+    </header>
+    <main class="relative">
+      <section class="section relative center wrap">
+        <p class="h8">Default width for images is 100%.</p>
+        <p class="h11 max-width-7">The greatest visual asset of the <span class="lowercase bold">NOAA</span> ocean exploration program is high-fidelity photography.</p>
+      </section>
+      <figure>
+        <picture>
+          <source media="(min-width: 61.8em)" srcset="../img/control-1440.jpg">
+          <source srcset="../img/control-960.jpg">
+          <img  class="margin-0" src="../img/control-1440.jpg" alt="Waves">
+        </picture>
+      </figure>
+      <section>
+        <div class="section relative center wrap">
+          <p class="h8">Build image galleries in three columns.</p>
+        </div>
+      </section>
+      <figure>
+        <ul class="gallery flex">
+          <li>
+            <picture>
+              <source media="(min-width: 61.8em)" srcset="../img/control-1440.jpg">
+              <source srcset="../img/control-960.jpg">
+              <img class="margin-0" src="../img/control-1440.jpg" alt="Waves">
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source media="(min-width: 61.8em)" srcset="../img/control-1440.jpg">
+              <source srcset="../img/control-960.jpg">
+              <img class="margin-0" src="../img/control-1440.jpg" alt="Waves">
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source media="(min-width: 61.8em)" srcset="../img/control-1440.jpg">
+              <source srcset="../img/control-960.jpg">
+              <img class="margin-0" src="../img/control-1440.jpg" alt="Waves">
+            </picture>
+          </li>
+        </ul>
+      </figure>
+      <section>
+        <div class="section relative center wrap">
+          <p class="h8 max-width-3">For extra whitespace, layer clipping masks over an image.</p>
+        </div>
+      </section>
+      <figure>
+        <div class="relative">
+          <picture>
+            <source media="(min-width: 61.8em)" srcset="../img/control-1440.jpg">
+            <source srcset="../img/control-960.jpg">
+            <img class="margin-0" src="../img/control-1440.jpg" alt="Waves">
+          </picture>
+          <div class="clip absolute">
+            <div class="clip__mask clip__mask-one control absolute"></div>
+            <div class="clip__mask clip__mask-two control absolute"></div>
+            <div class="clip__mask clip__mask-three control absolute"></div>
+          </div>
+        </div>
+      </figure>
+    </main>
+    <div class="height-100 min-height-1 relative">
+      <div class="logo logo-metallicseaweed logo-static absolute center"><span class="hide">Undercurrent</div></h1>
+      <a href="index.html" class="logo-menu absolute center"><span class="hide">Close menu</span></a>
+    </div>
+    <nav class="menu relative text-center">
+      <h1 class="h15 uppercase bold">Menu</h1>
+      <ul class="relative center wrap">
+        <li class="h4 uppercase"><a class="border-bottom-0" href="typography.html">Typography</a></li>
+        <li class="h4 uppercase margin-0"><a class="border-bottom-0" href="colors.html">Colors</a></li>
+        <li class="h4 uppercase color-black margin-0">Images</li>
+        <li class="h4 uppercase margin-0"><a class="border-bottom-0" href="graphics.html">Graphics</a></li>
+      </ul>
+    </nav>
+    <div class="relative">
+      <div class="about">
+        <div class="relative wrap center">
+          <p class="h11"><a href="index.html">&larr; Return home</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
