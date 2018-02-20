@@ -83,11 +83,3 @@
 .blink {
   animation: blink 707ms infinite;
 }
-
-.border-radius {
-  border-radius: 11.3em;
-}
-
-.aspect-ratio-2 {
-  padding-top: 140%;
-}
