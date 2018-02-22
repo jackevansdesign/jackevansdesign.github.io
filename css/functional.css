@@ -190,6 +190,10 @@
   padding-top: 56.25%;
 }
 
+.aspect-ratio-3 {
+  padding-top: 140%;
+}
+
 .overflow-x {
   overflow-x: hidden;
 }
@@ -308,7 +312,7 @@
 }
 
 .min-height-1 {
-  min-height: 25em;
+  min-height: 20em;
 }
 
 .z-index-1 {
