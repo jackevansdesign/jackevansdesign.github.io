@@ -4,8 +4,7 @@
 }
 
 a {
-  color: #0a7e8c;
-  border-bottom: 0.075em solid;
+  color: inherit;
 }
 
 a:hover,
@@ -15,23 +14,19 @@ a:focus {
   background: transparent;
 }
 
-.border-bottom-0 {
-  border-bottom: 0;
-}
-
-@media (min-width: 61.8em) {
-  .wrap {
-    padding: 2em 0;
-    width: 75%;
-  }
-}
-
 .color-metallicseaweed {
   color: #0a7e8c;
 }
 
 .background-metallicseaweed {
   background: #0a7e8c;
+}
+
+@media (min-width: 61.8em) {
+  .wrap {
+    padding: 2.618em 0;
+    width: 75%;
+  }
 }
 
 .about {
@@ -65,6 +60,13 @@ a:focus {
   height: 4em;
   border: 0;
   border-radius: 50%;
+}
+
+.logo-small,
+.logo-small:before,
+.logo-small:after {
+  width: 3em;
+  height: 3em;
 }
 
 .logo-metallicseaweed.logo-static {
@@ -140,6 +142,16 @@ a:focus {
   }
 }
 
+.rov {
+  background: url('../img/rov-960.jpg') no-repeat;
+}
+
+@media (min-width: 61.8em) {
+  .rov {
+    background: url('../img/rov-1440.jpg') no-repeat;
+  }
+}
+
 .typescale li {
   padding-top: 2.827em;
 }
@@ -208,9 +220,34 @@ a:focus {
   background-size: 300%;
   background-position: center bottom;
 }
-.waves {
-  z-index: 1;
+
+.button {
+  padding: 0.5em 1em;
 }
-.logotype {
-  z-index: 2;
+
+.button:hover,
+.button:focus {
+  background: white;
+  text-decoration: underline;
+}
+
+input {
+  border: 0;
+}
+
+input:active,
+input:focus {
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+::placeholder {
+  color: white;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 61.8em) {
+  .form {
+    width: 75%;
+  }
 }

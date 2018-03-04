@@ -18,18 +18,10 @@
   cursor: pointer;
 }
 
-.player__button:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  width: 4em;
-  height: 4em;
-  border: 3px solid;
-  border-radius: 50%;
+.player__button:hover,
+.player__button:focus {
+  color: #fbec5d;
+  background: transparent;
 }
 
 .is-playing .player__button {
@@ -54,14 +46,14 @@
   background-size: contain;
   background-position: top center;
   background-repeat: repeat-y;
-  height: 400%;
+  height: 300%;
   margin: 0;
 }
 
 .is-playing .oculus {
   background-position: top right;
-  transform: translateY(-75%);
-  transition: 5653ms transform linear;
+  transform: translateY(-66.7%);
+  transition: 3333ms transform linear;
   transform-origin: top center;
 }
 

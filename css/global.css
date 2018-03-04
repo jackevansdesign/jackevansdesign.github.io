@@ -9,42 +9,26 @@
   box-sizing: border-box;
 }
 
-::selection {
-  background: #dddddd;
-}
-
 html {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,sans-serif;
 }
 
 body {
-  font-size: 113%;
+  font-size: 141.4%;
   font-weight: 400;
   line-height: 1.414;
   color: #333333;
 }
 
-@media (min-width: 20.8125em) {
+@media (min-width: 50em) {
   body {
-    font-size: 125%;
-  }
-}
-
-@media (min-width: 25em) {
-  body {
-    font-size: 141.4%;
-  }
-}
-
-@media (min-width: 40em) {
-  body {
-    font-size: 161.8%;
+    font-size: 150%;
   }
 }
 
 @media (min-width: 61.8em) {
   body {
-    font-size: 177.7%;
+    font-size: 161.8%;
   }
 }
 
@@ -59,24 +43,28 @@ body * + * {
 }
 
 a,
-button {
-  text-decoration: none;
+button,
+input {
+  text-decoration: underline;
   outline: 0;
   -webkit-tap-highlight-color: transparent;
   background: transparent;
   border: 0;
   cursor: pointer;
-  color: blue;
+  color: #0413a2;
 }
 
 a:hover,
-a:active,
-a:focus {
-  color: #333333;
+a:focus,
+button:hover,
+button:focus {
+  color: initial;
+  background: #fbec5d;
 }
 
-a:focus {
-  background: #dddddd;
+::selection {
+  color: initial;
+  background: #fbec5d;
 }
 
 h1,
@@ -111,4 +99,10 @@ code {
 
 code span {
   padding-left: 1em;
+}
+
+.line {
+  background: linear-gradient( to right, rgba(171,171,171,0), rgba(171,171,171,0) 1px, rgba(171,171,171,1) 1px, rgba(171,171,171,1) );
+  background-size: 2px 100%;
+  height: 1px;
 }
