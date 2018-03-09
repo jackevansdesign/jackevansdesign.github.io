@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" class="height-100">
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +9,10 @@
     <link href="../css/functional.css" rel="stylesheet">
     <link href="../css/ad.css" rel="stylesheet">
   </head>
-  <body class="height-100">
-    <figure class="color-white font-smooth background-darkgrey height-100">
-      <div class="relative center wrap height-100">
-        <div class="flex height-100">
-          <div class="ad center width-100 max-width-8">
+  <body>
+    <figure class="color-white font-smooth background-darkgrey">
+      <div class="relative center wrap">
+        <div class="ad relative center width-100 max-width-7">
             <div class="aspect-ratio-1 relative">
               <div id="preload" class="ad__content absolute overflow-x overflow-y is-loading">
                 <div class="ad__background absolute">
@@ -47,13 +46,16 @@
               <div class="ad__caption ad__caption-loader h5 bold uppercase relative">Loading</div>
             </div>
           </div>
-          </div>
         </div>
       </div>
     </figure>
-    <nav class="charter">
-      <div class="relative center wrap text-center">
-        <a href="index.html">Return home</a>
+    <nav>
+      <div class="relative center wrap wrap-golden">
+        <ul class="flex flex-justify-between">
+          <li class="h5 bold uppercase relative"><a href="../index.html">Home</a></li>
+          <li class="h5 bold uppercase relative"><a href="index.html">Work</a></li>
+          <li class="h5 bold uppercase relative"><a href="../play/index.html">Play</a></li>
+        </ul>
       </div>
     </nav>
     <script src="../js/preload.js"></script>
