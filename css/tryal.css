@@ -1,9 +1,24 @@
+@media (max-width: 33.3em) {
+  body {
+    font-size: 125%;
+  }
+}
+
 ::selection {
   color: #ababab;
   background: transparent;
 }
 
-.background-black ::selection {
+a:hover,
+a:focus,
+button:hover,
+button:focus {
+  text-decoration: none;
+  background: transparent;
+}
+
+.background-black ::selection,
+.background-grey ::selection {
   color: white;
 }
 
