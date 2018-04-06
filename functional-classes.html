@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional classes | Jack Evans Design</title>
+    <meta content="I'm a designer building experiences in the digital world." name="description">
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/functional.css" rel="stylesheet">
+    <link href="css/charter.css" rel="stylesheet">
+    <link href="css/iA.css" rel="stylesheet">
+  </head>
+  <body class="charter">
+    <main>
+      <div class="relative center wrap wrap-golden">
+        <h1 class="bold">Functional classes</h1>
+        <p>CSS is functional</a> and <a href="global-styles.html">global</a>.</p>
+        <p>What we call “functional CSS” rejects semantic class names in favor of strictly self-evident labels. Objective values and their corresponding properties—released from the burden of being subjectively interpreted—revert back to the stuff of data entry.</p>
+        <figure>
+          <code class="iA h5 block">
+            <span class="block color-grey">/* type scale */</span>
+            <span class="block">.h1 {</span>
+            <span class="relative block" style="margin-left: 1.25em">font-size: 2.827em;</span>
+            <span class="relative block">}</span>
+            <span class="block">.h2 {</span>
+            <span class="relative block" style="margin-left: 1.25em">font-size: 2em;</span>
+            <span class="relative block">}</span>
+            <span class="block">.h3 {</span>
+            <span class="relative block" style="margin-left: 1.25em">font-size: 1.414em;</span>
+            <span class="relative block">}</span>
+            <span class="block">.h4 {</span>
+            <span class="relative block" style="margin-left: 1.25em">font-size: 1em;</span>
+            <span class="relative block">}</span>
+            <span class="block">.h5 {</span>
+            <span class="relative block" style="margin-left: 1.25em">font-size: 0.707em;</span>
+            <span class="relative block">}</span>
+            <span class="block">.h6 {</span>
+            <span class="relative block" style="margin-left: 1.25em">font-size: 0.5em;</span>
+            <span class="relative block">}</span>
+
+            <span class="block color-grey">/* functional classes for type... */</span>
+            <span class="block">.bold {</span>
+            <span class="relative block" style="margin-left: 1.25em">font-weight: 700;</span>
+            <span class="relative block">}</span>
+            <span class="block">.italic {</span>
+            <span class="relative block" style="margin-left: 1.25em">font-style: italic;</span>
+            <span class="relative block">}</span>
+            <span class="block">.uppercase {</span>
+            <span class="relative block" style="margin-left: 1.25em">text-transform: uppercase;</span>
+            <span class="relative block" style="margin-left: 1.25em">letter-spacing: 0.05em;</span>
+            <span class="relative block">}</span>
+            <span class="block">.text-center {</span>
+            <span class="relative block" style="margin-left: 1.25em">text-align: center;</span>
+            <span class="relative block">}</span>
+            <span class="block">.color-white {</span>
+            <span class="relative block" style="margin-left: 1.25em">color: white;</span>
+            <span class="relative block">}</span>
+            <span class="block">.color-grey {</span>
+            <span class="relative block" style="margin-left: 1.25em">color: #ababab;</span>
+            <span class="relative block">}</span>
+            <span class="block">.antialiased {</span>
+            <span class="relative block" style="margin-left: 1.25em">-webkit-font-smoothing: antialiased;</span>
+            <span class="relative block">}</span>
+
+            <span class="block color-grey">/* ...and layout */</span>
+            <span class="block">.inline {</span>
+            <span class="relative block" style="margin-left: 1.25em">display: inline;</span>
+            <span class="relative block">}</span>
+            <span class="block">.block {</span>
+            <span class="relative block" style="margin-left: 1.25em">display: block;</span>
+            <span class="relative block">}</span>
+            <span class="block">.inline-block {</span>
+            <span class="relative block" style="margin-left: 1.25em">display: inline-block;</span>
+            <span class="relative block">}</span>
+            <span class="block">.relative,</span>
+            <span class="relative block">.absolute {</span>
+            <span class="relative block" style="margin-left: 1.25em">margin: 0;</span>
+            <span class="relative block">}</span>
+            <span class="block">.relative {</span>
+            <span class="relative block" style="margin-left: 1.25em">position: relative;</span>
+            <span class="relative block">}</span>
+            <span class="block">.absolute {</span>
+            <span class="relative block" style="margin-left: 1.25em">position: absolute;</span>
+            <span class="relative block" style="margin-left: 1.25em">top: 0;</span>
+            <span class="relative block" style="margin-left: 1.25em">left: 0;</span>
+            <span class="relative block" style="margin-left: 1.25em">bottom: 0;</span>
+            <span class="relative block" style="margin-left: 1.25em">right: 0;</span>
+            <span class="relative block">}</span>
+            <span class="block">.absolute.center {</span>
+            <span class="relative block" style="margin-left: 1.25em">margin: auto;</span>
+            <span class="relative block">}</span>
+            <span class="block">.relative.center {</span>
+            <span class="relative block" style="margin-left: 1.25em">margin: 0 auto;</span>
+            <span class="relative block">}</span>
+          </code>
+        </figure>
+        <p>Related to functional classes are utilities. Think recurring components like wrappers, flexbox, etc. Such classes are semantic to a degree but essentially functional because they are self-explanatory. A class designated <span class="iA h5">.wrapper</span>, for instance, suggests a material of a certain size with a certain amount of space inside to contain other things—an element with <span class="iA h5">width</span> and <span class="iA h5">padding</span>. </p>
+        <figure>
+          <code class="iA h5 block">
+            <span class="block color-grey">/* miscellaneous utilities */</span>
+            <span class="block">.wrap {</span>
+            <span class="relative block" style="margin-left: 1.25em">padding: 0.707em;</span>
+            <span class="relative block">}</span>
+            <span class="block">@media (min-width: 25em) {</span>
+            <span class="block relative" style="margin-left: 1.25em">.wrap {</span>
+            <span class="block relative" style="margin-left: 2.5em">padding: 1.414em;</span>
+            <span class="relative block" style="margin-left: 1.25em">}</span>
+            <span class="relative block">}</span>
+            <span class="block">@media (min-width: 33.3em) {</span>
+            <span class="block relative" style="margin-left: 1.25em">.wrap {</span>
+            <span class="block relative" style="margin-left: 2.5em">padding: 2em;</span>
+            <span class="relative block" style="margin-left: 1.25em">}</span>
+            <span class="relative block">}</span>
+            <span class="block">@media (min-width: 56.5em) {</span>
+            <span class="block relative" style="margin-left: 1.25em">.wrap-golden {</span>
+            <span class="block relative" style="margin-left: 2.5em">padding-left: 0;</span>
+            <span class="block relative" style="margin-left: 2.5em">padding-right: 0;</span>
+            <span class="block relative" style="margin-left: 2.5em">width: 61.8%;</span>
+            <span class="relative block" style="margin-left: 1.25em">}</span>
+            <span class="relative block">}</span>
+            <span class="block">@media (min-width: 61.8em) {</span>
+            <span class="block relative" style="margin-left: 1.25em">.wrap-half {</span>
+            <span class="block relative" style="margin-left: 2.5em">padding-left: 0;</span>
+            <span class="block relative" style="margin-left: 2.5em">padding-right: 0;</span>
+            <span class="block relative" style="margin-left: 2.5em">width: 50%;</span>
+            <span class="relative block" style="margin-left: 1.25em">}</span>
+            <span class="relative block">}</span>
+            <span class="block">.flex {</span>
+            <span class="relative block" style="margin-left: 1.25em">display: flex;</span>
+            <span class="relative block" style="margin-left: 1.25em">justify-content: space-between;</span>
+            <span class="relative block" style="margin-left: 1.25em">align-items: center;</span>
+            <span class="relative block">}</span>
+          </code>
+        </figure>
+      </div>
+    </main>
+    <nav>
+      <div class="relative center wrap wrap-golden text-center">
+        <a href="index.html">Return home</a>
+      </div>
+    </nav>
+  </body>
+</html>

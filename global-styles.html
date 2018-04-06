@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global styles | Jack Evans Design</title>
+    <meta content="I'm a designer building experiences in the digital world." name="description">
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/functional.css" rel="stylesheet">
+    <link href="css/charter.css" rel="stylesheet">
+    <link href="css/iA.css" rel="stylesheet">
+  </head>
+  <body class="charter">
+    <main>
+      <div class="relative center wrap wrap-golden">
+        <h1>Global styles</h1>
+        <p>CSS is global and <a href="functional-classes.html">functional</a>.</p> 
+        <p>By leveraging the “cascade”—the global scope of any stylesheet—we can define inherited properties for type and reset layout for block-level elements.</p>
+        <figure>
+          <code class="iA h5 block">
+            <span class="block">* {</span>
+            <span class="block color-grey" style="margin-left: 1.25em">/* <span class="italic">inherit type properties</span> */</span>
+            <span class="block" style="margin-left: 1.25em">font-family: inherit;</span>
+            <span class="relative block" style="margin-left: 1.25em">font-size: inherit;</span>
+            <span class="relative block" style="margin-left: 1.25em">font-weight: inherit;</span>
+            <span class="relative block" style="margin-left: 1.25em">line-height: inherit;</span>
+            <span class="relative block" style="margin-left: 1.25em">color: inherit;</span>
+            
+            <span class="block color-grey" style="margin-left: 1.25em">/* <span class="italic">reset block-level elements</span> */</span>
+            <span class="block" style="margin-left: 1.25em">margin: 0;</span>
+            <span class="block relative" style="margin-left: 1.25em">padding: 0;</span>
+            <span class="block relative" style="margin-left: 1.25em">box-sizing: border-box;</span>
+            <span class="block relative">}</span>
+          </code>
+        </figure>
+        <p>To write concise global styling for basic markup now becomes a simple task.</p>
+        <figure>
+          <code class="iA h5 block">
+            <span class="block">html {</span>
+            <span class="block color-grey" style="margin-left: 1.25em">/* <span class="italic">system fonts</span> */</span>
+            <span class="block max-width-40" style="margin-left: 1.25em">font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, “Helvetica Neue”, Helvetica, sans-serif;</span>
+            </span>
+            <span class="block relative">}</span>
+            
+            <span class="block">body {</span>
+            <span class="block color-grey" style="margin-left: 1.25em">/* <span class="italic">primary type styles</span> */</span>
+            <span class="block" style="margin-left: 1.25em">font-size: 141.4%;</span>
+            <span class="block relative" style="margin-left: 1.25em">font-weight: 400;</span>
+            <span class="block relative" style="margin-left: 1.25em">line-height: 1.414;</span>
+            <span class="block relative" style="margin-left: 1.25em">color: #333333;</span>
+            <span class="relative block">}</span>
+            
+            <span class="block">@media (max-width: 33.3em) {</span>
+            <span class="block relative" style="margin-left: 1.25em">body {</span>
+            <span class="block color-grey" style="margin-left: 2.5em">/* <span class="italic">scale down for small screens</span> */</span>
+            <span class="block" style="margin-left: 2.5em">font-size: 112.5%;</span>
+            <span class="relative block" style="margin-left: 1.25em">}</span>
+            <span class="relative block">}</span>
+
+            <span class="block">@media (min-width: 61.8em) {</span>
+            <span class="block relative" style="margin-left: 1.25em">body {</span>
+            <span class="block color-grey" style="margin-left: 2.5em">/* <span class="italic">scale up for medium screens</span> */</span>
+            <span class="block" style="margin-left: 2.5em">font-size: 161.8%;</span>
+            <span class="relative block" style="margin-left: 1.25em">}</span>
+            <span class="relative block">}</span>
+
+            <span class="block">@media (min-width: 80em) {</span>
+            <span class="block relative" style="margin-left: 1.25em">body {</span>
+            <span class="block color-grey" style="margin-left: 2.5em">/* <span class="italic">scale up for large screens</span> */</span>
+            <span class="block" style="margin-left: 2.5em">font-size: 200%;</span>
+            <span class="relative block" style="margin-left: 1.25em">}</span>
+            <span class="relative block">}</span>
+
+            <span class="block">body * + * {</span>
+            <span class="block color-grey" style="margin-left: 1.25em">/* <span class="italic">block-level element margins</span> */</span>
+            <span class="block" style="margin-left: 1.25em">margin-top: 1em;</span>
+            <span class="relative block">}</span>
+
+            <span class="block">h1,</span>
+            <span class="block relative">h2,</span>
+            <span class="block relative">h3,</span>
+            <span class="block relative">h4,</span>
+            <span class="block relative">h5,</span>
+            <span class="block relative">h6 {</span>
+            <span class="block color-grey" style="margin-left: 1.25em">/* <span class="italic">secondary type styles</span> */</span>
+            <span class="block" style="margin-left: 1.25em">font-size: 1.25em;</span>
+            <span class="block relative" style="margin-left: 1.25em">font-weight: 700;</span>
+            <span class="block relative" style="margin-left: 1.25em">line-height: 1.25;</span>
+            <span class="block relative">}</span>
+
+            <span class="block">p {</span>
+            <span class="block color-grey" style="margin-left: 1.25em">/* <span class="italic">paragraph measure</span> */</span>
+            <span class="block" style="margin-left: 1.25em">max-width: 25em;</span>
+            <span class="block relative">}</span>
+
+            <span class="block">ul {</span>
+            <span class="block color-grey" style="margin-left: 1.25em">/* <span class="italic">remove list styling</span> */</span>
+            <span class="block" style="margin-left: 1.25em">list-style-type: none;</span>
+            <span class="block relative">}</span>
+
+            <span class="block">img {</span>
+            <span class="block color-grey" style="margin-left: 1.25em">/* <span class="italic">responsive images</span> */</span>
+            <span class="block" style="margin-left: 1.25em">width: 100%;</span>
+            <span class="block relative" style="margin-left: 1.25em">display: block;</span>
+            <span class="block relative">}</span>
+
+            <span class="block">a {</span>
+            <span class="block color-grey" style="margin-left: 1.25em">/* <span class="italic">set link styling...</span> */</span>
+            <span class="block" style="margin-left: 1.25em">color: #0413a2;</span>
+            <span class="block relative">}</span>
+
+            <span class="block">a:focus,</span>
+            <span class="block relative">a:hover,</span>
+            <span class="block relative">a:active {</span>
+            <span class="block color-grey" style="margin-left: 1.25em">/* <span class="italic">...and interaction</span> */</span>
+            <span class="block" style="margin-left: 1.25em">color: initial;</span>
+            <span class="block relative" style="margin-left: 1.25em">text-decoration: none;</span>
+            <span class="block relative" style="margin-left: 1.25em">background: #fbec5d;</span>
+            <span class="block relative">}</span>
+
+            <span class="block">::selection {</span>
+            <span class="block color-grey" style="margin-left: 1.25em">/* <span class="italic">highlight</span> */</span>
+            <span class="block" style="margin-left: 1.25em">background: #d5d5d5;</span>
+            <span class="relative block">}</span>
+          </code>
+        </figure>
+        <p>When the global scope emerges, <a href="functional-classes.html">functional classes</a> allowing for rapid design in the browser begin to effectively write themselves.</p>
+      </div>
+    </main>
+    <nav>
+      <div class="relative center wrap wrap-golden text-center">
+        <a href="index.html">Return home</a>
+      </div>
+    </nav>
+  </body>
+</html>
