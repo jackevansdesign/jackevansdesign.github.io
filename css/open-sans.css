@@ -1,0 +1,9 @@
+.open-sans {
+  font-family: "Open Sans Bold",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,sans-serif;
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  font-weight: bold;
+  src:  url("../woff/open-sans-bold.woff") format("woff");
+}

@@ -1,12 +1,14 @@
-@media (max-width: 33.3em) {
-  body {
-    font-size: 112.5%;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
 }
 
-::selection {
-  color: initial;
-  background: transparent;
+p {
+  max-width: 22.5em;
 }
 
 a {
@@ -20,6 +22,11 @@ a:focus {
   background: transparent;
 }
 
+::selection {
+  color: initial;
+  background: transparent;
+}
+
 .color-metallicseaweed {
   color: #0a7e8c;
 }
@@ -28,29 +35,20 @@ a:focus {
   background: #0a7e8c;
 }
 
-@media (min-width: 61.8em) {
+@media (min-width: 56.5em) {
   .wrap {
-    padding: 2.618em 0;
-    width: 75%;
+    padding-left: 0;
+    padding-right: 0;
+    width: 70.7%;
   }
 }
 
 .menu {
-  padding-top: 0;
   margin-top: -3.6em;
 }
 
 .menu .wrap {
-  padding: 1.414em;
-}
-
-.menu {
-  padding-top: 0;
-  margin-top: -3.6em;
-}
-
-.menu .wrap {
-  padding: 1.414em;
+  padding-top: 1.414em;
 }
 
 .logo,
@@ -154,10 +152,6 @@ a:focus {
   }
 }
 
-.typescale li {
-  padding-top: 2.827em;
-}
-
 .figure-colors {
   box-shadow: 0 0 1.414em rgba(0,0,0,0.125);
 }
@@ -225,6 +219,7 @@ a:focus {
 
 .button {
   padding: 0.5em 1em;
+  cursor: pointer;
 }
 
 .button:hover,
@@ -233,8 +228,11 @@ a:focus {
   text-decoration: underline;
 }
 
-input {
+input,
+button {
+  outline: 0;
   border: 0;
+  background: transparent;
 }
 
 input:active,
@@ -246,10 +244,4 @@ input:focus {
 ::placeholder {
   color: white;
   -webkit-font-smoothing: antialiased;
-}
-
-@media (min-width: 61.8em) {
-  .form {
-    width: 75%;
-  }
 }

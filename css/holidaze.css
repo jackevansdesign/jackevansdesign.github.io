@@ -1,22 +1,16 @@
-@media (min-width: 80em) {
-  body {
-    font-size: 225%;
-  }
-}
-
 @media (min-width: 96em) {
   body {
     font-size: 225%;
   }
 }
 
-::selection {
-  color: #ababab;
-  background: transparent;
-}
-
-.background-grey ::selection {
-  color: white;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
 }
 
 a {
@@ -36,17 +30,6 @@ a:focus {
   background: cyan;
 }
 
-.lines {
-  background: linear-gradient( to bottom, rgba(0,0,0,0), rgba(0,0,0,0) 2px, rgba(0,0,0,0.2) 2px, rgba(0,0,0,0.2) );
-  background-size: 100% 6px;
-}
-
-@media (min-width: 61.8em) {
-  .wrap {
-    padding: 2.618em;
-  }
-}
-
 @media (min-width: 61.8em) {
   .wrap-half {
     width: 50%;
@@ -55,8 +38,12 @@ a:focus {
   }
 }
 
+.menu {
+  border-bottom: 4px solid;
+}
+
 .menu-item a {
-  border-bottom: 6px solid;
+  border-bottom: 4px solid;
   text-decoration: none;
 }
 
@@ -73,7 +60,7 @@ a:focus {
   .menu-item {
     width: 25%;
     height: 100%;
-    border-right: 6px solid;
+    border-right: 4px solid;
   }
 
   .menu-item a {
@@ -94,25 +81,30 @@ a:focus {
   }
 }
 
+.input {
+  background: white;
+}
+
 .button {
-  padding: 0.5em 1em;
+  cursor: pointer;
 }
 
 .button:hover,
 .button:focus {
-  background: black;
-  color: cyan;
-  -webkit-font-smoothing: antialiased;
+  color: #d5d5d5;
 }
 
 ::placeholder {
-  color: white;
-  -webkit-font-smoothing: antialiased;
+  color: black;
 }
 
-input {
-  border: 1px solid;
+input,
+button {
+  background: transparent;
+  border: 4px solid black;
   padding: 0.5em 1em;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 input:active,

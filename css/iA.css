@@ -1,0 +1,21 @@
+.iA {
+  font-family: "iA Writer Duospace", Consolas, Menlo, Courier, monospace;
+}
+
+@font-face {
+  font-family: "iA Writer Duospace";
+  font-weight: 400;
+  src:  url("../woff/iA-writer-duospace-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "iA Writer Duospace";
+  font-style: italic;
+  src:  url("../woff/iA-writer-duospace-italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "iA Writer Duospace";
+  font-weight: 700;
+  src:  url("../woff/iA-writer-duospace-bold.woff") format("woff");
+}

@@ -1,21 +1,9 @@
 .liberation {
-  font-family: "Liberation",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,sans-serif;
+  font-family: "Liberation Serif Italic", Georgia, serif;
 }
 
 @font-face {
-  font-family: "Liberation";
-  font-weight: 400;
-  src:  url("../woff/liberation-mono-regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Liberation";
+  font-family: "Liberation Serif Italic";
   font-style: italic;
   src:  url("../woff/liberation-serif-italic.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Liberation";
-  font-weight: 700;
-  src:  url("../woff/liberation-sans-bold.woff") format("woff");
 }

@@ -1,84 +1,69 @@
 * {
+
+  /* inherit type properties */
+
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
   line-height: inherit;
   color: inherit;
+
+  /* reset block-level elements */
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 html {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,sans-serif;
+
+  /* system fonts */
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 body {
-  font-size: 133.3%;
+
+  /* base type styles */
+
+  font-size: 141.4%;
   font-weight: 400;
   line-height: 1.414;
   color: #333333;
 }
 
-@media (min-width: 33.3em) {
+@media (max-width: 33.3em) {
+
+  /* scale down on small screens */
+
   body {
-    font-size: 141.4%;
+    font-size: 112.5%;
   }
 }
 
-@media (min-width: 50em) {
-  body {
-    font-size: 150%;
-  }
-}
+@media (min-width: 40em) {
 
-@media (min-width: 61.8em) {
+  /* scale up on medium screens */
+
   body {
     font-size: 161.8%;
   }
 }
 
-@media (min-width: 96em) {
+@media (min-width: 80em) {
+
+  /* scale up on large screens */
+
   body {
     font-size: 200%;
   }
 }
 
 body * + * {
+
+  /* block-level element margins */
+
   margin-top: 1em;
-}
-
-img,
-picture,
-video,
-svg {
-  width: 100%;
-  display: block;
-}
-
-a,
-button,
-input {
-  text-decoration: underline;
-  outline: 0;
-  -webkit-tap-highlight-color: transparent;
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-  color: #0413a2;
-}
-
-a:hover,
-a:focus,
-button:hover,
-button:focus {
-  color: initial;
-  background: #fbec5d;
-}
-
-::selection {
-  color: initial;
-  background: #fbec5d;
 }
 
 h1,
@@ -86,24 +71,59 @@ h2,
 h3,
 h4,
 h5,
-h6,
-blockquote {
-  font-size: 1.414em;
-  line-height: 1.25;
+h6 {
+
+  /* set secondary type styling */
+
+  font-size: 1.25em;
+  font-weight: 700;
+  line-height: 1.25em;
 }
 
-blockquote {
-  margin-bottom: 1em;
+p {
+
+  /* paragraph measure */
+
+  max-width: 25em;
 }
 
 ul {
+
+  /* remove list styling */
+
   list-style-type: none;
 }
 
-code {
-  font-family: Consolas, Menlo, Courier, monospace;
+img {
+
+  /* responsive images */
+
+  width: 100%;
+  display: block;
 }
 
-code span {
-  padding-left: 1em;
+a {
+
+  /* set link styling... */
+
+  color: #0413a2;
+}
+
+a:focus,
+a:hover,
+a:active {
+
+  /* ...and interaction */
+
+  text-decoration: none;
+  color: initial;
+  background: #fbec5d;
+  outline: 0;
+}
+
+::selection {
+
+  /* highlight */
+
+  background: #d5d5d5;
 }
