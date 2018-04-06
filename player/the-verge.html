@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Verge | Vax 2016 | Jack Evans Design</title>
+    <meta content="I'm a designer building experiences in the digital world." name="description">
+    <link href="../css/global.css" rel="stylesheet">
+    <link href="../css/functional.css" rel="stylesheet">
+    <link href="../css/player.css" rel="stylesheet">
+    <link href="../css/open-sans.css" rel="stylesheet">
+  </head>
+  <body class="open-sans bold color-black background-antiflash highlight-skyblue">
+    <main>
+      <div class="relative wrap">
+        <svg class="relative center block" width="4em" height="3.4em" viewBox="0 0 40 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <path fill="#000000" d="M40,0 L40,21.6216216 L20.7371007,10.8108108 L40,0 Z M0,0 L0,21.6216216 L19.2628993,10.8108108 L0,0 Z M20.7371007,12.3832924 L20.7371007,34.004914 L40,23.1941032 L20.7371007,12.3832924 Z M19.2628993,12.3832924 L19.2628993,34.004914 L0,23.1941032 L19.2628993,12.3832924 Z"></path>
+        </svg>
+      </div>
+      <div class="wrap">
+        <figure id="animationPlayer" class="relative center max-width-20">
+          <div class="relative overflow-y">
+            <img src="../img/oculus.jpg">
+            <div class="oculus absolute"></div>
+            <div class="dots absolute"></div>
+            <div class="verge absolute center">
+              <svg class="absolute center" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 291.4 1280 217.2">
+                <path d="M0 292.1v58.1h39.7v153.2h67.1V292.1M220.1 372.4h-31.4v-22.3h15.8v-58h-82.8v211.3h67v-79.9h31.4v79.9h67.2V292.1h-67.2M302 503.4h124.3v-58.2h-60.2v-24.6h38.3v-48.2h-38.3v-22.2h60.2v-58.1H302M954.8 363.6c0-45.6-33.7-71.5-81.5-71.5h-74.7v211.2h67.1v-54.1l38.4 54.1h75.7l-54.4-81c19.6-10.7 29.4-30.2 29.4-58.7M865.5 387v-39.3c9.3 0 20.7 2.8 24.1 13 .3.9.5 1.9.8 2.9 0 .1 0 .3.1.4.1 1 .3 2.2.3 3.4 0 15.7-14.3 19.6-25.3 19.6M559.2 420.8h-.6l-4.8-17.4-15-53.1h26.4l17.4-58.2h-134l76.8 211.2h68.8l8.3-22.6s36.8-99.8 56.9-154.2v176.8h124.3v-58.2h-60.2v-24.6h38.2v-48.1h-38.2v-22.2h60.2V292H598l-38.8 128.8zM1280 350.3v-58.1h-124.3v211.2H1280v-58.2h-60.3v-24.6h38.3v-48h-38.3v-22.3"></path>
+                <path d="M1142.8 459.1V373H1048v48h35.3v17.1c-2.7 2.4-8.5 3.7-14.5 3.7-24.6 0-42.8-19.4-42.8-43.1s17.7-44.7 42.3-44.7c14.9 0 50.2.1 50.2.1v-62.6h-16.1c-30 0-59.9-2.4-87.4 11.8-21.7 11.2-38.9 30.2-48 52.8-5.3 13.3-8 27.7-8 42 0 59.9 47 110.4 107.9 110.4 30.2 0 59.7-11.3 75.8-25.4.1-14.6.1-16.8.1-24"></path>
+              </svg>
+            </div>
+            <button id="playButton" class="player__button color-white absolute center">
+              <svg class="absolute center block" width="2em" height="2.2em" style="margin-left: 1.333em;" viewBox="0 0 20 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <polygon fill="#ffffff" points="0 0 0 21.6216216 19.2628993 10.8108108"></polygon>
+              </svg>
+              <span class="hide">Play</span>
+            </button>
+          </div>
+          <figcaption class="flex">
+            <span>theVerge</span>
+            <span class="relative">5000ms</span>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="wrap">
+        <nav>
+          <div>
+            <ul class="relative center max-width-20">
+              <li class="flex">
+                <a class="link" href="zoom-in.html">zoomIn</a>
+                <span class="relative">3000ms</span>
+              </li>
+              <li class="flex">
+                <a class="link" href="rotate-360.html">rotate360</a>
+                <span class="relative">4000ms</span>
+              </li>
+              <li class="flex">
+                <a class="link" href="rotate-perspective.html">rotatePerspective</a>
+                <span class="relative">4000ms</span>
+              </li>
+              <li class="flex">
+                <a class="link" href="dead-airspace.html">deadAirspace</a>
+                <span class="relative">6000ms</span>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </main>
+    <aside>
+      <div class="wrap">
+        <div class="relative center max-width-20 text-center">
+          <a class="link" href="vax.html">Vax 2016</a>
+        </div>
+      </div>
+    </aside>
+    <script src="../js/player.js"></script>
+  </body>
+</html>
