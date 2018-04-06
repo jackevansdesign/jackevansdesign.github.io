@@ -8,62 +8,63 @@
     <link href="../css/global.css" rel="stylesheet">
     <link href="../css/functional.css" rel="stylesheet">
     <link href="../css/noaa.css" rel="stylesheet">
+    <link href="../css/iA.css" rel="stylesheet">
   </head>
   <body class="color-metallicseaweed height-100">
-    <header class="header relative center wrap flex flex-justify-between flex-align-center">
+    <header class="header relative center wrap flex">
       <h1 class="uppercase">Typography</h1>
-      <a class="h5 bold uppercase text-decoration-none margin-0" href="menu.html">Menu</a>
+      <a class="h5 bold uppercase text-decoration-none relative" href="menu.html">Menu</a>
     </header>
     <main class="relative">
       <section class="section relative center wrap">
-        <p class="h3 max-width-6">Default to an OS-specific font stack that responds to the user’s corporate aesthetic of choice (Apple, Google, Microsoft).</p>
-        <code class="h5 block max-width-9">font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,sans-serif;</code>
+        <p class="h3 max-width-20">Default to an OS-specific font stack that responds to the user’s corporate aesthetic of choice (Apple, Google, Microsoft).</p>
+        <code class="iA h5 block max-width-40">font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, “Helvetica Neue”, Helvetica, sans-serif;</code>
       </section>
       <figure class="figure relative">
         <div class="relative center wrap">
-          <div class="relative aspect-ratio-1 background-metallicseaweed">
+          <div class="relative aspect-ratio-67 background-metallicseaweed">
             <div class="absolute flex">
-              <div class="logotype bold color-white font-smooth center">1.414</h1>
+              <div class="logotype bold color-white antialised center">1.414</h1>
             </div>
           </div>
         </div>
       </figure>
       <section class="section relative center wrap">
-        <p class="h3 max-width-6">Build global and local type scales in augmented fourth intervals.</p>
-        <p class="max-width-8">Set global <code class="h15">line-height</code> of <code class="h15">1.414</code> to all elements with the exception of headings, which should default to <code class="h15">1.25</code>. With the following <span class="uppercase">CSS</span> snippet, reset global margins for every block-level element:</p>
-        <code class="h5 block">
+        <p class="h3 max-width-16">Build global and local type scales in augmented fourth intervals.</p>
+        <p class="max-width-25">Set global <code class="h15">line-height</code> of <code class="h15">1.414</code> to all elements with the exception of headings, which should default to <code class="h15">1.25</code>. With the following <span class="uppercase">CSS</span> snippet, reset global margins for every block-level element:</p>
+        <code class="iA h5 block">
           body * + * {
-            <span class="block">margin-top: 1em;</span>
+            <span class="block" style="margin-left: 1.25em">margin-top: 1em;</span>
           }
         </code>
       </section>
       <section class="relative center wrap">
-        <p class="max-width-6">Here is a sample type scale set in augmented fourth intervals with additional styling:</p>
+        <p>Here is a sample type scale set in augmented fourth intervals with additional styling:</p>
         <ul class="typescale">
-          <li class="relative">
+          <li class="relative padding-top-2">
             <h1 class="h1 bold">Level one heading</h1>
-            <code class="h5 block">font-size: 2em;</code>
+            <code class="iA h5 block">font-size: 2em;</code>
           </li>
-          <li class="relative">
+          <li class="relative padding-top-2">
             <h2 class="h2 uppercase">Level two heading</h2>
-            <code class="h5 block">font-size: 1.414em;</code>
+            <code class="iA h5 block">font-size: 1.414em;</code>
           </li>
-          <li class="relative">
+          <li class="relative padding-top-2">
             <h3 class="h3">Level three heading</h3>
-            <code class="h5 block">font-size: 1.414em;</code>
+            <code class="iA h5 block">font-size: 1.414em;</code>
           </li>
-          <li class="relative">
+          <li class="relative padding-top-2">
             <p>This is a paragraph.</p>
-            <code class="h5 block">font-size: 1em;</code>
+            <code class="iA h5 block">font-size: 1em;</code>
           </li>
-          <li class="relative">
+          <li class="relative padding-top-2">
             <p class="h5">This is small text.</p>
-            <code class="h5 block">font-size: 0.707em;</code>
+            <code class="iA h5 block">font-size: 0.707em;</code>
           </li>
         </ul>
       </section>
     </main>
-    <div class="height-100 min-height-1 relative">
+    <div class="height-100 min-height-20 relative">
       <div class="logo logo-metallicseaweed logo-static absolute center"><span class="hide">Undercurrent</div></h1>
       <a href="index.html" class="logo-menu absolute center"><span class="hide">Close menu</span></a>
     </div>
@@ -71,13 +72,13 @@
       <h1 class="h5 uppercase bold">Menu</h1>
       <ul class="relative center wrap">
         <li class="h2 uppercase color-black">Typography</li>
-        <li class="h2 uppercase margin-0"><a class="text-decoration-none" href="colors.html">Colors</a></li>
-        <li class="h2 uppercase margin-0"><a class="text-decoration-none" href="images.html">Images</a></li>
-        <li class="h2 uppercase margin-0"><a class="text-decoration-none" href="graphics.html">Graphics</a></li>
+        <li class="h2 uppercase relative"><a class="text-decoration-none" href="colors.html">Colors</a></li>
+        <li class="h2 uppercase relative"><a class="text-decoration-none" href="images.html">Images</a></li>
+        <li class="h2 uppercase relative"><a class="text-decoration-none" href="graphics.html">Graphics</a></li>
       </ul>
     </nav>
-    <div class="relative padding-top-2 padding-bottom-4">
-      <div class="relative center wrap wrap-golden">
+    <div class="relative padding-top-2 padding-bottom-2">
+      <div class="relative wrap center">
         <p><a href="index.html">&larr; Return home</a></p>
       </div>
     </div>
